@@ -3,7 +3,6 @@
 ## 🏢 Sobre a Stellaris
 
 A **Stellaris** é uma empresa de produção de eventos diversificados voltada para o público jovem e universitário da cidade de Quixadá-CE, lançada recentemente. Seu foco é proporcionar experiências únicas por meio de eventos bem organizados, promovendo conexão entre pessoas, marcas e ideias.
-testetesteteste
 
 ## 📚 Introdução
 
