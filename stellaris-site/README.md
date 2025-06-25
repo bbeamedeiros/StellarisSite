@@ -1,12 +1,39 @@
-# React + Vite
+# 🌟 Site da Stellaris
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🏢 Sobre a Stellaris
 
-Currently, two official plugins are available:
+A **Stellaris** é uma empresa de produção de eventos diversificados voltada para o público jovem e universitário da cidade de Quixadá-CE, lançada recentemente. Seu foco é proporcionar experiências únicas por meio de eventos bem organizados, promovendo conexão entre pessoas, marcas e ideias.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📚 Introdução
 
-## Expanding the ESLint configuration
+Este repositório contém o código-fonte do sistema web da Stellaris. A plataforma foi desenvolvida com o objetivo de:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Divulgar eventos passados e futuros;
+- Redirecionar para venda de ingressos e produtos;
+- Coletar feedbacks e sugestões do público;
+- Facilitar propostas de parceria.
+
+O sistema serve como canal de comunicação direto com o público, parceiros e empresas interessadas, com interface acessível e moderna.
+
+## 🚀 Funcionalidades principais
+
+- Apresentação institucional da empresa;
+- Catálogo de produtos e ingressos com redirecionamento para compra;
+- Formulários interativos (parceria e avaliação);
+- Exibição de eventos anteriores e futuros;
+- Contato com a equipe via WhatsApp.
+
+## 🎨 Protótipo
+
+[🔗 Acesse o protótipo no Figma](https://www.figma.com/design/tHIApdVMWrhwuxbF88sDtY/prototipo---P3?node-id=0-1)
+
+## 👥 Integrantes da equipe
+
+- Ana Beatriz Benevinuto Medeiros  
+- Lara Maria Gurgel Medeiros  
+- Natan Henrique Oliveira Façanha  
+- Yasmin Maiara Lima Almeida  
+
+---
+
+> Projeto desenvolvido como parte da disciplina **Projeto Integrado 3** e **Projeto de Interfaces Web** — Curso de **Design Digital**, Universidade Federal do Ceará (UFC) - Campus Quixadá.
