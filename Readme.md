@@ -3,6 +3,7 @@
 ## 🏢 Sobre a Stellaris
 
 A **Stellaris** é uma empresa de produção de eventos diversificados voltada para o público jovem e universitário da cidade de Quixadá-CE, lançada recentemente. Seu foco é proporcionar experiências únicas por meio de eventos bem organizados, promovendo conexão entre pessoas, marcas e ideias.
+testetesteteste
 
 ## 📚 Introdução
 
@@ -37,3 +38,4 @@ O sistema serve como canal de comunicação direto com o público, parceiros e e
 ---
 
 > Projeto desenvolvido como parte da disciplina **Projeto Integrado 3** e **Projeto de Interfaces Web** — Curso de **Design Digital**, Universidade Federal do Ceará (UFC) - Campus Quixadá.
+
