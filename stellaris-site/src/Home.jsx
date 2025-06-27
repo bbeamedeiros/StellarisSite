@@ -1,9 +1,11 @@
-export default Home;
 
 function Home() {
+    return(
     <div>
-        <section>
-            <h1>Oi  mus amores</h1>
-        </section>
+            <h1>Oi  meus amores</h1>
+        
     </div>
+    )
 }
+
+export default Home;

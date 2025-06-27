@@ -1,10 +1,14 @@
 import './App.css'
+import './components/Navbar'
+import Navbar from './components/Navbar';
 
 import Home from './Home'
+
 function App() {
   
   return (
     <>
+  <Navbar/>
   <Home/>
   </>
     )
