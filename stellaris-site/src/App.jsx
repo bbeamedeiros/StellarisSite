@@ -4,14 +4,14 @@ import Navbar from './components/Navbar';
 import Home from './Componente LandingPage/Home'
 
 function App() {
-  
+
   return (
     <>
-  <Navbar/>
-  <Home/>
-  <Footer />
-  </>
-    )
-  }
+      <Navbar />
+      <Home />
+      <Footer />
+    </>
+  )
+}
 
 export default App;
