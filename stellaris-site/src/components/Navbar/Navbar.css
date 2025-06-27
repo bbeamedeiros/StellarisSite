@@ -1,4 +1,10 @@
 .menu {
   display: flex;
   list-style: none;
+  background-color: black;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
 }

@@ -1,12 +1,12 @@
 import './Navbar.css';
-import { ReactComponent as Logo } from '/src/assets/logohorizontal.svg';
+import logo from './logohorizontal.png';
 import { navItems } from './data';
 
 function Navbar() {
   return (
     <nav className="nav">
       <ul className="menu">
-        <li><Logo className="logo" /></li>
+        <li><img src={logo} alt="Logo" className="logo" /></li> {/* Use img */}
         {navItems.map((item) => (
           <li key={item.href}>
             <a href={item.href}>{item.label}</a>
