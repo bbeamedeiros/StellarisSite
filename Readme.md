@@ -37,4 +37,3 @@ O sistema serve como canal de comunicação direto com o público, parceiros e e
 ---
 
 > Projeto desenvolvido como parte da disciplina **Projeto Integrado 3** e **Projeto de Interfaces Web** — Curso de **Design Digital**, Universidade Federal do Ceará (UFC) - Campus Quixadá.
-
