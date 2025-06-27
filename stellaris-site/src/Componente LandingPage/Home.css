@@ -1,12 +1,31 @@
 .sobre-contato {
-display: flex;
-flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .sobre-nos {
     margin: 5%;
+    border: 1px, solid rgb(78, 78, 78);
+    padding: 10px;
+    border-radius: 5px;
+
 }
 
-.contato{
-margin: 5%;
+.eventos-stellaris {
+    text-align: center;
+    margin: 5%;
+    border: 1px, solid rgb(78, 78, 78);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.produtos-stellaris {
+    text-align: center;
+    margin: 5%;
+    border: 1px, solid rgb(78, 78, 78);
+    padding: 10px;
+    border-radius: 5px;
+
 }
