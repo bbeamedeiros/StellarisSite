@@ -2,16 +2,6 @@
   background-color: #000;
 <<<<<<< HEAD
   padding: 32px 164px;
-=======
-  padding: 0.8px 2px;
-  color: white;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5px;
->>>>>>> ab3147259f5c27377527d157dd18a35cadc9338a
 }
 
 .menu {
