@@ -21,6 +21,19 @@ function Home() {
                 <p><h6>Conheça os produtos oficiais!</h6></p>
             </section>
         </div>
+        <div className='missao'>
+            <h3>Nossa Missão</h3>
+            <p>Fazer da vida uma festa inesquecível. Na Stellaris, nossa missão é transformar ideias em experiências únicas - daquelas que viram boas histórias pra contar. Acreditamos no poder dos encontros, na energia dos eventos feitos com a alma e na magia de criar memórias que brilham mais que os flashes.</p>
+            <h3>Nossos Valores</h3>
+            <li>Experiência memorável</li>
+            <li>Transparência e confiança</li>
+            <li>Acessbilidade digital</li>
+            <li>Segurança de dados</li>
+            <h3>O que oferecemos</h3>
+            <div className='oferecimentos'>
+                dddd
+            </div>
+        </div>
 </div>
     )
 }

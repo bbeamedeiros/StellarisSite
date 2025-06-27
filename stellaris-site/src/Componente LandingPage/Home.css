@@ -29,3 +29,10 @@
     border-radius: 5px;
 
 }
+
+.missao {
+    margin: 5%;
+    border: 1px, solid rgb(78, 78, 78);
+    padding: 10px;
+    border-radius: 5px;
+}
