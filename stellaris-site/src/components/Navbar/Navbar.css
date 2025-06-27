@@ -1,39 +1,4 @@
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  padding: 0.8rem 2rem;
-  color: white;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .menu {
   display: flex;
-  gap: 1.5rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  position: relative;
-}
-
-.menu li:not(:last-child)::after {
-  content: '|';
-  position: absolute;
-  right: -0.9rem;
-  color: white;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
