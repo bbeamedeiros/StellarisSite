@@ -1,0 +1,12 @@
+.sobre-contato {
+display: flex;
+flex-wrap: nowrap;
+}
+
+.sobre-nos {
+    margin: 5%;
+}
+
+.contato{
+margin: 5%;
+}

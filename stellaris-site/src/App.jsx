@@ -1,8 +1,6 @@
 import './App.css'
-import './components/Navbar'
 import Navbar from './components/Navbar';
-
-import Home from './Home'
+import Home from './Componente LandingPage/Home'
 
 function App() {
   
