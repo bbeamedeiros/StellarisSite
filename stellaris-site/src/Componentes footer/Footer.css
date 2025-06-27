@@ -1,0 +1,46 @@
+.rodape {
+    background-color: rgba(10, 10, 10, 0.9);
+    color: white;
+    text-align: center;
+    font-size: 14.4px;
+    padding: 40px;
+    width: 100%;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.rodape-contatos {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.rodape-contato-item {
+    color: white;
+    text-decoration: none;
+    transition: #E0BBE4 0.3s ease;
+}
+
+.rodape-redes-sociais {
+    color: white;
+    text-decoration: none;
+    transition: #E0BBE4 0.3s ease;
+}
+
+.rodape-redes-sociais:hover{
+    color:#E0BBE4
+}
+
+.social-icone {
+    width: 30px;
+    height: auto;
+}
+
