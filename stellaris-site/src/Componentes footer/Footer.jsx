@@ -1,5 +1,8 @@
 import React from "react";
 import './Footer.css'
+import IconeTikTok from '../assets/icontiktok.png';
+import IconeInstagram from '../assets/iconinstagram.png';
+import IconeX from '../assets/iconx.png';
 
 export default function Footer() {
     return (
