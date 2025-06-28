@@ -1,7 +1,7 @@
 export default Home;
 import './Home.css'
 
-//teste 
+//teste oi
 function Home() {
     return(
         <div>
