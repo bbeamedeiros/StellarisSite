@@ -3,7 +3,7 @@ import Footer from './Componentes footer/Footer';
 import Navbar from './components/Navbar';
 import Home from './Componente LandingPage/Home'
 
-// comentario (alterado main)
+// comentario (alterado)
 
 function App() {
 
