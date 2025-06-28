@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="rodape-conteudo">
                 <p>Todos os direitos reservados</p>
 
-                 {/* Contatos de E-mail e Telefone */}
+                 {}
 
                 <div className="rodape-contatos">
                     <a href="mailto:contato@stellariseventos.com" className="rodape-contato-item">
@@ -18,7 +18,7 @@ export default function Footer() {
                     </a>
                 </div>
 
-                {/* Links para Redes Sociais */}
+                {}
                 <div className="rodape-redes-sociais">
                     <a href="https://www.tiktok.com/@sua_conta_tiktok">
                         <img src={IconeTikTok} alt="TikTok" className="social-icone" />
