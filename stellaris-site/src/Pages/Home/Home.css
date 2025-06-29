@@ -2,19 +2,13 @@
     font-size: 48px;
     font-weight: 700;
 }
-.sub-title{
-    font-size: 18px;
-    color: #c2c2c2;
-
+.header{
+    background: linear-gradient(#121212, transparent), url(../../assets/Header.svg)
 }
-
-
 
 .sobre-nos {
     margin: 5%;
-    border: 1px, solid rgb(78, 78, 78);
     padding: 10px;
-    border-radius: 5px;
     max-width: 600px;
 
 }
@@ -37,28 +31,25 @@ font-size: 24px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-
-
 }
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #dcdcdc;
+}
+
 .eventos-stellaris {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin: 5%;
-    border: 1px solid rgb(78, 78, 78);
     padding: 10px;
-    border-radius: 5px;
     
 }
 
 .produtos-stellaris {
     text-align: center;
     margin: 5%;
-    border: 1px, solid rgb(78, 78, 78);
     padding: 10px;
-    border-radius: 5px;
 
 }
 
