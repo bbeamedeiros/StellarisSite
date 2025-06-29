@@ -7,7 +7,7 @@ function Home() {
     return(
         <div>
             <div className='header'>
-                a
+                <img src={header}></img>
             </div>
         <div className="sobre-nos">
             <section>
