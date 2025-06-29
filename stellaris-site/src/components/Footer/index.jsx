@@ -13,7 +13,7 @@ export default function Footer() {
 
                 <div className="rodape-contatos">
                     <h3>Entre em contato</h3>
-                    <a href="mailto:contato@stellariseventos.com" className="rodape-contato-item">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stellariscontato@gmail.com&su=Olá_Stellaris&body=Quero_falar_com_vocês" className="rodape-contato-item">
                         <img src={mensagem}/>stellariscontato@gmail.com
                     </a>
                     <a href="https://w.app/stellarisqxd" className="rodape-contato-item">
