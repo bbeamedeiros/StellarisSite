@@ -1,0 +1,17 @@
+.eventos-container {
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.evento-futuro, .eventos-passados { 
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
