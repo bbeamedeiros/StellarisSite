@@ -18,8 +18,8 @@ export default function Footer() {
                     <a href="mailto:contato@stellariseventos.com" className="rodape-contato-item">
                         <img src={mensagem}/>stellariscontato@gmail.com
                     </a>
-                    <a href="tel:+5588999999999" className="rodape-contato-item">
-                       <img src={wpp}/> (88) 9 9999-9999
+                    <a href="https://w.app/stellarisqxd" className="rodape-contato-item">
+                       <img src={wpp}/> +55 (85) 9147-8783
                     </a>
                 </div>
 
@@ -28,13 +28,13 @@ export default function Footer() {
                 </div>
 
                 <div className="rodape-redes-sociais">
-                    <a href="https://www.tiktok.com/@sua_conta_tiktok">
+                    <a href="https://www.tiktok.com/@stellarisqxd">
                         <img src={IconeTikTok} alt="TikTok" className="social-icone" />
                     </a>
-                    <a href="https://www.instagram.com/sua_conta_instagram">
+                    <a href="https://www.instagram.com/stellarisqxd/">
                         <img src={IconeInstagram} alt="Instagram" className="social-icone" />
                     </a>
-                    <a href="https://twitter.com/sua_conta_x">
+                    <a href="https://x.com/stellarisqxd">
                         <img src={IconeX} alt="X (Twitter)" className="social-icone" />
                     </a>
                 </div>
