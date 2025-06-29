@@ -9,6 +9,11 @@ export default function Parceiros() {
         Curabitur vel lacus nec urna egestas aliquam. <br></br>
         Donec ac sem sed lorem commodo porttitor. <br></br>
       </p>
+      <p></p>
+      <p>
+        <h1>Tem interesse em se tornar <p></p> 
+        um parceiro da Stellaris? </h1>
+      </p>
     </div>
   );
 }
