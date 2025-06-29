@@ -3,25 +3,30 @@ import './Footer.css'
 import IconeTikTok from '../assets/icontiktok.png';
 import IconeInstagram from '../assets/iconinstagram.png';
 import IconeX from '../assets/iconx.png';
+import stellaris_Página3 from '../assets/stellaris_Página 3.png';
+import mensagem from '../assets/Vectormensage.svg';
+import wpp from '../assets/Vectorwpp.svg';
+
 
 export default function Footer() {
     return (
         <footer className="rodape">
             <div className="rodape-conteudo">
-                <p>Todos os direitos reservados</p>
-
-                 {}
 
                 <div className="rodape-contatos">
+                    <h3>Entre em contato</h3>
                     <a href="mailto:contato@stellariseventos.com" className="rodape-contato-item">
-                        stellariscontato@gmail.com
+                        <img src={mensagem}/>stellariscontato@gmail.com
                     </a>
                     <a href="tel:+5588999999999" className="rodape-contato-item">
-                        (88) 9 9999-9999
+                       <img src={wpp}/> (88) 9 9999-9999
                     </a>
                 </div>
 
-                {}
+                <div className="rodape-image">
+                    <img src={stellaris_Página3} alt="Logo Stellaris Eventos" className="rodape-logo" />
+                </div>
+
                 <div className="rodape-redes-sociais">
                     <a href="https://www.tiktok.com/@sua_conta_tiktok">
                         <img src={IconeTikTok} alt="TikTok" className="social-icone" />

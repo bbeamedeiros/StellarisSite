@@ -1,38 +1,56 @@
 .rodape {
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(10, 10, 10, 0);
     color: white;
     text-align: center;
     font-size: 14.4px;
-    padding: 40px;
-    width: 100%;
+    min-height: 298px;
+    height: 100%;
+    
 }
 
 .rodape-conteudo {
-    max-width: 1200px;
-    margin: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0 100px;
+    justify-content: space-between;
     align-items: center;
-    gap: 24px;
 }
 
 .rodape-contatos {
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
     gap: 16px;
+    flex-direction: column;
+}
+.rodape-logo {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rodape-contato-item {
+    display: flex;
+    gap: 8px;
     color: white;
     text-decoration: none;
-    transition: #E0BBE4 0.3s ease;
+    align-items: center;
+}
+.rodape-contato-item:hover {
+    color: #E0BBE4;
 }
 
 .rodape-redes-sociais {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
     color: white;
     text-decoration: none;
     transition: #E0BBE4 0.3s ease;
+
 }
 
 .rodape-redes-sociais:hover{
@@ -42,5 +60,8 @@
 .social-icone {
     width: 30px;
     height: auto;
+}
+.social-icone:hover {
+    filter: brightness(0.8);
 }
 
