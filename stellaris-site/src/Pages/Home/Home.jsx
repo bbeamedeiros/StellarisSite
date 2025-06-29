@@ -1,11 +1,14 @@
 export default Home;
 import BotaoBranco from '../../components/BotaoBranco';
 import './Home.css'
+import header from '../../assets/header.svg'
 
-//teste oi oi
 function Home() {
     return(
         <div>
+            <div className='header'>
+                a
+            </div>
         <div className="sobre-nos">
             <section>
                 <p className='title'>Quem somos <br/> na fila do rolê?</p>
