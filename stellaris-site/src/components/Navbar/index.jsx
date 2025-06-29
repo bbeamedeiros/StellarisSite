@@ -1,6 +1,7 @@
 import './styles.css';
 import logo from '../../assets/logohorizontal.png';
 import { navItems } from './data';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -9,7 +10,7 @@ function Navbar() {
       <ul className="menu">
         {navItems.map((item) => (
           <li key={item.href}>
-            <a href={item.href}>{item.label}</a>
+            <Link to={item.href}>{item.label}</Link>
           </li>
         ))}
       </ul>

@@ -1,8 +1,8 @@
-export default function Parceiros() {
+export default function Produtos() {
   return (
-    <div className="parceiros-container">
-      <h1>Parceiros</h1>
-      <p>Em breve mais informações sobre nossos parceiros.</p>
+    <div className="produtos-container">
+      <h1>Produtos</h1>
+      <p>Em breve mais informações sobre nossos produtos.</p>
     </div>
   );
 }
