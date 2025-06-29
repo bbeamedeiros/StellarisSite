@@ -1,4 +1,5 @@
 export default Home;
+import BotaoBranco from '../../components/BotaoBranco';
 import './Home.css'
 
 //teste oi oi
@@ -15,14 +16,14 @@ function Home() {
             <section>
                 <p className='title'>Eventos Stellaris</p>
                 <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
-                <button>Explorar Eventos</button>
+                <BotaoBranco texto={"Explorar Eventos"} onClick={null}/>
             </section>
         </div>
          <div className='produtos-stellaris'>
             <section>
                <p className='title'>Produtos Stellaris</p>
                 <p className='sub-title'>Conheça os produtos oficiais!</p>
-                <button>Ver catálogo completo</button>
+                <BotaoBranco texto={"Ver catálogo completo"} onClick={null}/>
             </section>
         </div>
         <div className='missao'>
