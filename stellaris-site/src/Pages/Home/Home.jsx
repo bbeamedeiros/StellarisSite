@@ -7,20 +7,22 @@ function Home() {
         <div>
         <div className="sobre-nos">
             <section>
-                <h1>Sobre nós</h1>
-                <p>Nós somos a Stellaris, pppp</p>
+                <p className='title'>Quem somos <br/> na fila do rolê?</p>
+                <p className='quem-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod laboriosam eligendi reiciendis eaque exercitationem! Quam ducimus cumque consequuntur in dolor officiis unde incidunt corrupti quas cupiditate? Labore, corporis alias.</p>
             </section>
             </div>
         <div className='eventos-stellaris'>
             <section>
-                <h1>Eventos Stellaris</h1>
-                <p><h6>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</h6></p>
+                <p className='title'>Eventos Stellaris</p>
+                <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
+                <button>Explorar Eventos</button>
             </section>
         </div>
          <div className='produtos-stellaris'>
             <section>
-                <h1>Produtos Stellaris</h1>
-                <p><h6>Conheça os produtos oficiais!</h6></p>
+               <p className='title'>Produtos Stellaris</p>
+                <p className='sub-title'>Conheça os produtos oficiais!</p>
+                <button>Ver catálogo completo</button>
             </section>
         </div>
         <div className='missao'>

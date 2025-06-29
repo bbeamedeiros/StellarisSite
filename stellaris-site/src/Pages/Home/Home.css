@@ -1,24 +1,56 @@
-.sobre-contato {
-    display: flex;
-    justify-content: space-between;
-    
+.title {
+    font-size: 48px;
+    font-weight: 700;
 }
+.sub-title{
+    font-size: 18px;
+    color: #c2c2c2;
+
+}
+
+
 
 .sobre-nos {
     margin: 5%;
     border: 1px, solid rgb(78, 78, 78);
     padding: 10px;
     border-radius: 5px;
+    max-width: 600px;
 
 }
 
+button {
+display: flex;
+width: 362px;
+height: 50px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: auto;
+margin-top: 32px;
+border-radius: 20px;
+background: #FFF;
+
+color: #121212;
+font-family: 'Inter',sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+
+}
 .eventos-stellaris {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 5%;
-    border: 1px, solid rgb(78, 78, 78);
+    border: 1px solid rgb(78, 78, 78);
     padding: 10px;
     border-radius: 5px;
-
+    
 }
 
 .produtos-stellaris {
@@ -36,3 +68,4 @@
     padding: 10px;
     border-radius: 5px;
 }
+
