@@ -1,12 +1,10 @@
-import React from "react";
-import './Footer.css'
-import IconeTikTok from '../assets/icontiktok.png';
-import IconeInstagram from '../assets/iconinstagram.png';
-import IconeX from '../assets/iconx.png';
-import stellaris_Página3 from '../assets/stellaris_Página 3.png';
-import mensagem from '../assets/Vectormensage.svg';
-import wpp from '../assets/Vectorwpp.svg';
-
+import './styles.css'
+import IconeTikTok from '../../assets/icontiktok.png';
+import IconeInstagram from '../../assets/iconinstagram.png';
+import IconeX from '../../assets/iconx.png';
+import stellaris_Página3 from '../../assets/stellaris_Página 3.png';
+import mensagem from '../../assets/Vectormensage.svg';
+import wpp from '../../assets/Vectorwpp.svg';
 
 export default function Footer() {
     return (
