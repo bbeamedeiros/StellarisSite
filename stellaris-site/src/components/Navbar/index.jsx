@@ -10,7 +10,7 @@ function Navbar() {
     useEffect(() => {
       const handleScroll = () => {
         // Quando passar de 60px de rolagem, aplica o fundo preto
-        setScrolled(window.scrollY > 60);
+        setScroll(window.scrollY > 60);
       };
   
       window.addEventListener('scroll', handleScroll);
