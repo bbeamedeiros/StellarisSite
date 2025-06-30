@@ -1,9 +1,11 @@
 import React from 'react';
-import './avaliar.css';
+import './Avaliar.css';
 
 function Avaliar() {
   return (
-    <div>
+    <div className="avaliar-container">
+      <h1>Avalie os Eventos</h1>
+      <p>Sua opinião é muito importante para nós!</p>
     </div>
   );
 }

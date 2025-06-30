@@ -24,3 +24,10 @@
   font-size: 1.1rem;
   line-height: 1.5;
 }
+.avaliar-container {
+  background-color: #fff;
+  color: #111;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}

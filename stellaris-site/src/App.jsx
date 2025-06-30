@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Eventos from './Pages/Eventos';
 import Produtos from './Pages/Produtos';
 import Parceiros from './Pages/Parceiros';
+import Avaliar from './Pages/AvaliarEvento/avaliar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Eventos" element={<Eventos />} />
         <Route path="/Parceiros" element={<Parceiros />} />
         <Route path="*" element={<Home />} />
+        <Route path="/avaliar" element={<Avaliar />} />
       </Routes>
       <Footer />
     </BrowserRouter>
