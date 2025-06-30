@@ -1,30 +1,39 @@
-.card-evento{
+.card-evento {
     border: 1px solid #E0E0E0;
+    padding: 12px;
+    border-radius: 6px;
+    transition: border 0.3s ease, transform 0.3s ease;
 }
 
-.card-evento:hover{
-    border: 1px solid #FFB800;
+.card-evento:hover {
+    color: #957DAD;
+    border: 1px solid #957DAD;
+    transform: scale(1.02);
 }
 
-.card-evento-imagem{
+.card-evento-imagem {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.card-evento-titulo{
+.card-evento-titulo {
     font-size: 24px;
     font-weight: 700;
     color: #ffffff;
 }
 
-.card-evento-descricao{
+.card-evento-descricao {
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
 }
 
-.card-evento-link{
+.card-evento-link {
     text-decoration: none;
     color: #ffffff;
+}
+
+.card-evento-link:hover{
+    color: #957DAD;
 }

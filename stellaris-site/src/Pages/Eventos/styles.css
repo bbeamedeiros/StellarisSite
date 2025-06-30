@@ -4,14 +4,65 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding-top: 120px;
 }
 
 .evento-futuro, .eventos-passados { 
     display: flex;
     gap: 12px;
+
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.avaliacao-eventos {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.avaliacao-eventos strong {
+  font-weight: 600;
+}
+
+.avaliacao-eventos .avaliar-link {
+  color: #555;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.avaliacao-eventos .avaliar-link:hover {
+  color: #000;
+}
+
+.avaliacao-eventos {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: #222;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 480px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.avaliacao-eventos strong {
+  font-weight: 700;
+}
+
+.avaliacao-eventos .avaliar-link {
+  color: #7aabff;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.avaliacao-eventos .avaliar-link:hover {
+  color: #a3c2ff;
+}
+
 
