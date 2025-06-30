@@ -1,5 +1,3 @@
-/* Avaliar.css */
-
 .header img {
   width: 100%;
   height: auto;
@@ -15,18 +13,17 @@
 }
 
 .avaliar-texto .title {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .avaliar-texto .descricao {
-  font-size: 1.1rem;
+  font-size: 32px;
   line-height: 1.5;
 }
 .avaliar-container {
-  background-color: #fff;
-  color: #111;
+  color: white;
   padding: 40px;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
