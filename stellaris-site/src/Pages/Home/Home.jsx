@@ -1,4 +1,7 @@
 export default Home;
+import CardEventos from '../../components/CardEventos';
+import Tardezinha from '../../assets/Tardezinha.svg';
+import PortalMeiaNoite from '../../assets/Portal00h.svg';
 import BotaoBranco from '../../components/BotaoBranco';
 import './Home.css'
 import header from '../../assets/header.svg'
@@ -26,13 +29,34 @@ function Home() {
         <div className='eventos-stellaris'>
                 <p className='title'>Eventos Stellaris</p>
                 <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
-                <BotaoBranco texto={"Explorar Eventos"} onClick={null}/>
+                <div className='eventos-container'>
+
+                <CardEventos
+                                    className='card-evento'
+                                    titulo={"Tardezinha Stellaris - 2025"}
+                                    descricao={"Em breve mais informações sobre o evento."}
+                                    imagem={Tardezinha}
+                                    link={"#"} />
+                                    
+                <CardEventos        
+                                    className='card-evento'
+                                    titulo={"Portal da Meia Noite - 2025"}
+                                    descricao={"Finalizado com sucesso!"}
+                                    imagem={PortalMeiaNoite}
+                                    link={"#"} />
+                                    
+                                    </div>
+                                    
+                <BotaoBranco texto={"Explorar Eventos"} onClick= {() => window.location.href = '/eventos'}/>
+                    
         </div>
          <div className='produtos-stellaris'>
             <section>
                <p className='title'>Produtos Stellaris</p>
                 <p className='sub-title'>Conheça os produtos oficiais!</p>
-                <BotaoBranco texto={"Ver catálogo completo"} onClick={null}/>
+                <div>
+                <BotaoBranco texto={"Ver catálogo completo"} onClick= {() => window.location.href = '/produtos'}/>
+                    </div>
             </section>
         </div>
         <div className='missao-container'>
