@@ -1,0 +1,7 @@
+.parceiros-container {
+    display: flex;
+    width: 808px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+}
