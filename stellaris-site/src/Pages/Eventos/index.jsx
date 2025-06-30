@@ -12,7 +12,7 @@ export default function Eventos() {
                 <h1>Bora pro Próximo? Garanta o Seu Ingresso!</h1>
                 <p>Em breve mais informações sobre o evento.</p>
                 <CardEventos
-                    titulo={"Próximo Evento"}
+                    titulo={"Tardezinha Stellaris - 2025"}
                     descricao={"Em breve mais informações sobre o evento."}
                     imagem={Tardezinha}
                     link={"#"} />

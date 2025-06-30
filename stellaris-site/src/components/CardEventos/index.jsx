@@ -1,3 +1,5 @@
+import './style.css';
+
 export default function CardEventos({ titulo, descricao, imagem, link }) {
     //evento é um objeto que tem propriedade de imagem, titulo. 
     //cardEvento é uma caixa principal que envolve todo o conteudo
