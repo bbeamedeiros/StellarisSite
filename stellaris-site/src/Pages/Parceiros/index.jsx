@@ -1,3 +1,5 @@
+import './styles.css';
+
 export default function Parceiros() {
   return (
     <div className="parceiros-container">

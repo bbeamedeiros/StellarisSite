@@ -1,3 +1,5 @@
+import './syles.css';
+
 export default function Produtos() {
   return (
     <div className="produtos-container">
