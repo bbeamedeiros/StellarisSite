@@ -48,15 +48,23 @@ function Home() {
             <div className='oferecimentos'>
                 <div className='parcerias'>
                      <img src={iconHand}></img>
+                     <h4>Proposta de Parcerias</h4>
+                     <p>Redirecionamento para formulário online para envio de propostas e parcerias.</p>
                 </div>
                 <div className='compra-ingressos'>
                      <img src={iconMsg}></img>
+                     <h4>Compra de Ingressos via WhatsApp</h4>
+                     <p>Atendimento direto para compra prática e rápida pelo WhatsApp da empresa.</p>
                 </div>
                 <div className='compra-produtos'>
                      <img src={iconBuy}></img>
+                     <h4>Compra de Produtos</h4>
+                     <p>Formulário online para controle e realização de vendas de produtos temáticos.</p>
                 </div>
                 <div className='avaliacao'>
                      <img src={iconStar}></img>
+                     <h4>Avaliação dos Eventos</h4>
+                     <p className='gap'>Formulário para que o público avalie eventos passados e ajude a melhorar sempre.</p>
                 </div>
                 </div>
             </div>
