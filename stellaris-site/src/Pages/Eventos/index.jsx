@@ -3,6 +3,7 @@ import './styles.css';
 import Tardezinha from '../../assets/Tardezinha.svg';
 import PortalMeiaNoite from '../../assets/Portal00h.svg';
 import { Link } from 'react-router-dom';
+import Avaliar from "../AvaliarEvento/avaliar";
 
 export default function Eventos() {
 
