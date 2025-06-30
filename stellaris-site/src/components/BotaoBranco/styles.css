@@ -18,5 +18,10 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 
+}
 
+button:hover {
+    background: #aca8a8;
+    transition: 0.3s;
+    cursor: pointer;
 }
