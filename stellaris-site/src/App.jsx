@@ -6,7 +6,6 @@ import Eventos from './Pages/Eventos';
 import Produtos from './Pages/Produtos';
 import Parceiros from './Pages/Parceiros';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
 function App() {
   return (
     <BrowserRouter>

@@ -1,5 +1,5 @@
 import './styles.css';
-import logo from '../../assets/logohorizontal.png';
+import logo from "../../assets/logohorizontal.svg";
 import { navItems } from './data';
 import { Link } from 'react-router-dom';
 
