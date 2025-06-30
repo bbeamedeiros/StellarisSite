@@ -2,6 +2,7 @@ import CardEventos from '../../components/CardEventos';
 import './styles.css';
 import Tardezinha from '../../assets/Tardezinha.svg';
 import PortalMeiaNoite from '../../assets/Portal00h.svg';
+import { Link } from 'react-router-dom';
 
 export default function Eventos() {
 
@@ -27,7 +28,15 @@ export default function Eventos() {
                     imagem={PortalMeiaNoite}
                     link={"#"}
                 />
+                <div className="avaliacao-eventos">
+                    <p>
+                    <strong>Avalie os eventos que você participou:</strong>{' '}
+                    <Link to="/avaliar">Clique aqui</Link>. <br />
+                    Eventos futuros terão opção de avaliação após a realização.
+                    </p>
+                </div>
             </div>
         </div>
+        
     );
 }
