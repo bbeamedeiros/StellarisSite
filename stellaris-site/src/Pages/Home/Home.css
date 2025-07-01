@@ -79,9 +79,10 @@
 }
 
 .parcerias,
-.compra-ingressos,
-.compra-produtos,
-.avaliacao {
+.festa,
+.engajamento,
+.imersao,
+.idd-visual {
     width: 289px;
     padding: 20px;
     line-height: 3;
@@ -93,6 +94,10 @@
     padding-bottom: 36px;
 }
 
-.li {
-    color: blue;
+.lista {
+    line-height: 1.8;
+}
+
+.txt-oferecimento {
+    padding-top: 12px;    
 }

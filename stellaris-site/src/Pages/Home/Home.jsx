@@ -6,7 +6,8 @@ import BotaoBranco from '../../components/BotaoBranco';
 import './Home.css'
 import header from '../../assets/header.svg'
 import StellarisGrupo from '../../assets/StellarisGrupo.svg'
-import iconBuy from '../../assets/iconBuy.svg'
+import iconDrink from '../../assets/iconDrink.svg'
+import iconPaint from '../../assets/iconPaint.svg'
 import iconHand from '../../assets/iconHand.svg'
 import iconStar from '../../assets/iconStar.svg'
 import iconMsg from '../../assets/iconMsg.svg'
@@ -58,35 +59,42 @@ function Home() {
             <div className='missao-container'>
                 <div className='missao'>
                     <h3 className='titulo-missao'>Nossa Missão</h3>
-                    <p className='texto-missao'>Fazer da vida uma festa inesquecível. Na Stellaris, nossa missão é transformar ideias em experiências únicas - daquelas que viram boas histórias pra contar. Acreditamos no poder dos encontros, na energia dos eventos feitos com a alma e na magia de criar memórias que brilham mais que os flashes.</p>
+                    <p className='texto-missao'>A Stellaris tem como missão principal a conexão entre pessoas através de experiências únicas, criativas e inesquecíveis. Além disso, também é objetivado transformar eventos universitários em verdadeiros universos de celebração, onde energias, liberdade de expressão e o sentimento de pertencimento brilham como constelações.</p>
                     <h3 className='titulo-valores'>Nossos Valores</h3>
                     <div className='texto-valores'>
-                        <li>Experiência memorável - Criamos eventos que emocionam e conectam, garantindo momentos únicos para todos.</li>
-                        <li>Transparência e confiança - Priorizamos uma comunicação clara e aberta, essencial para parcerias e relacionamento com o público.</li>
-                        <li>Acessbilidade digital - Facilitamos o contato e participação via plataformas simples, como WhatsApp e formulários online.</li>
-                        <li>Segurança de dados - Garantimos a proteção das informações dos nossos clientes e parceiros em todas as interações.</li>
+                        <li className='lista'>Criatividade com propósito - Valorizamos a originalidade em todas as etapas dos nossos serviços, acreditando que ideias criativas são essenciais para gerar experiências marcantes e diferenciadas.</li>
+                        <li className='lista'>Compromisso com a excelência- Buscamos a máxima qualidade na concepção, planejamento e execução dos nossos eventos, sempre atentos aos detalhes que transformam uma festa em uma vivência inesquecível.</li>
+                        <li className='lista'>Respeito e inclusão - Promovemos ambientes acolhedores, diversos e seguros, onde todas as pessoas possam se sentir pertencentes e respeitadas.</li>
+                        <li className='lista'>Conexão com o público - Mantemos um diálogo aberto e próximo com o nosso público, compreendendo suas expectativas para entregar experiências que realmente façam sentido e gerem conexões.</li>
+                        <li className='lista'>Ética e responsabilidade - Atuamos com transparência, responsabilidade e respeito às parcerias que firmamos, conscientes do nosso papel social dentro da sociedade.</li>
+                        <li className='lista'>Evolução constante - Estamos sempre em movimento, acompanhando tendências, ouvindo nosso público e aprimorando nossos processos para manter a Stellaris em constante crescimento.</li>
                     </div>
                     <h3 className='titulo-oferecimenots'>O que oferecemos:</h3>
                     <div className='oferecimentos'>
                         <div className='parcerias'>
                             <img src={iconHand}></img>
-                            <h4>Proposta de Parcerias</h4>
-                            <p>Redirecionamento para formulário online para envio de propostas e parcerias.</p>
+                            <h4>Gestão de eventos em parceiras com CAs e Atléticas</h4>
+                            <p className='txt-oferecimento'>Atuamos junto a centros acadêmicos e organizações estudantis, cuidando de toda a produção e logística.</p>
                         </div>
-                        <div className='compra-ingressos'>
+                        <div className='engajamento'>
                             <img src={iconMsg}></img>
-                            <h4>Compra de Ingressos via WhatsApp</h4>
-                            <p>Atendimento direto para compra prática e rápida pelo WhatsApp da empresa.</p>
+                            <h4>Ações de engajamento e conteúdo</h4>
+                            <p className='txt-oferecimento'>Produzimos conteúdos digitais que ampliam o alcance e o impacto dos nossos eventos.</p>
                         </div>
-                        <div className='compra-produtos'>
-                            <img src={iconBuy}></img>
-                            <h4>Compra de Produtos</h4>
-                            <p>Formulário online para controle e realização de vendas de produtos temáticos.</p>
+                        <div className='festa'>
+                            <img src={iconDrink}></img>
+                            <h4>Produção de festas temáticas para os públicos universitário e adulto</h4>
+                            <p className='txt-oferecimento'>Eventos com identidade visual e conceito criativo – do planejamento à execução.</p>
                         </div>
-                        <div className='avaliacao'>
+                        <div className='imersao'>
                             <img src={iconStar}></img>
-                            <h4>Avaliação dos Eventos</h4>
-                            <p className='gap'>Formulário para que o público avalie eventos passados e ajude a melhorar sempre.</p>
+                            <h4>Experiências imersivas</h4>
+                            <p className='txt-oferecimento'>Utilizamos narrativas e conceituações cósmicas para que cada evento pareça um salto intergaláctico – “da Terra para a Stellaris”.</p>
+                        </div>
+                        <div className='idd-visual'>
+                            <img src={iconPaint}></img>
+                            <h4>Criação de identidades visuais para eventos</h4>
+                            <p className='txt-oferecimento'>Desenvolvemos nomes, temas, artes e narrativas que diferenciam cada festa e fortalecem a cultura universitária local.</p>
                         </div>
                     </div>
                 </div>
