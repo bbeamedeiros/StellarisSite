@@ -1,9 +1,9 @@
 .parceiros-container {
-    display: flex;
-    padding-top: 120px;
-    width: 808px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 35px;
-
+  display: flex;
+  width: 808px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  padding: 110px 100px 20px 100px;
+  box-sizing: border-box;
 }

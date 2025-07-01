@@ -13,9 +13,15 @@ export default function Parceiros() {
         Donec ac sem sed lorem commodo porttitor. <br></br>
       </p>
       
+      <br></br>
+
       <p>
         <h1>Tem interesse em se tornar <p></p> 
         um parceiro da Stellaris? </h1>
+      </p>
+      <p>
+        Clique abaixo e preencha nosso formulário de proposta.  <br></br>
+        Vamos adorar conhecer sua ideia!
       </p>
     </div>
   );
