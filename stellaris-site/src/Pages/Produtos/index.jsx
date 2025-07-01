@@ -13,32 +13,31 @@ export default function Produtos() {
         <p>Conheça os produtos exclusivos dessa coleção especial.</p>
 
         <CardProdutos
-          titulo={"Tardezinha Stellaris - 2025"}
+          titulo={"Tardezinha Stellaris"}
           descricao={"Produto indisponível no momento. Em breve mais informações."}
           imagem={tardezinhaprodutos}
           link={"#"} />
       </div>
 
       <div className='produtos-colecao'>
-        <h1>Portal da Meia Noite</h1>
+        <h1>Portal da Meia Noite 1ª Edição</h1>
         <p>Descubra os itens únicos que foram vendidos na primeira edição desse evento icônico.</p>
 
-        <div className='card-produtos-container'>
+        <div className='produtos-cards-container'>
           <CardProdutos
-            titulo={"Copo Portal 00h"}
+            titulo={"Copo"}
             descricao={"Copo personalizado do evento."}
             imagem={tardezinhaprodutos}
             link={"#"} />
 
           <CardProdutos
-            titulo={"Chaveiro Portal 00h"}
+            titulo={"Chaveiro "}
             descricao={"Chaveiro exclusivo do evento."}
             imagem={tardezinhaprodutos}
             link={"#"} />
 
-
           <CardProdutos
-            titulo={"Combo intergaláctico Portal 00h"}
+            titulo={"Combo intergaláctico"}
             descricao={"Combinação de produtos do evento."}
             imagem={tardezinhaprodutos}
             link={"#"} />
