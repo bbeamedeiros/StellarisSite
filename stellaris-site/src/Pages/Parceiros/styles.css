@@ -4,8 +4,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 35px;
-  padding: 90px 40px 20px 40px; /* Adicionamos padding-top de 90px */
-  
+  padding: 100px 60px 20px 60px;
   box-sizing: border-box;
-    
 }
