@@ -1,3 +1,4 @@
+
 .title {
     font-size: 48px;
     font-weight: 700;
@@ -19,7 +20,7 @@
 }
 
 .sobre-nos {
-    margin: 5%;
+    margin-left: 5%;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -28,7 +29,6 @@
 .sobre-nos-imagem {
     justify-content: end;
     margin-right: 200px;
-
 
 }
 
@@ -41,7 +41,11 @@
     text-align: center;
     margin: 5%;
     padding: 10px;
+}
 
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .produtos-stellaris {
@@ -88,3 +92,4 @@
     width: 289px;
     padding: 20px;
 }
+
