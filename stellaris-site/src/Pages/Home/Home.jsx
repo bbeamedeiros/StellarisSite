@@ -57,14 +57,16 @@ function Home() {
             </div>
             <div className='missao-container'>
                 <div className='missao'>
-                    <h3>Nossa Missão</h3>
-                    <p>Fazer da vida uma festa inesquecível. Na Stellaris, nossa missão é transformar ideias em experiências únicas - daquelas que viram boas histórias pra contar. Acreditamos no poder dos encontros, na energia dos eventos feitos com a alma e na magia de criar memórias que brilham mais que os flashes.</p>
-                    <h3>Nossos Valores</h3>
-                    <li>Experiência memorável - Criamos eventos que emocionam e conectam, garantindo momentos únicos para todos.</li>
-                    <li>Transparência e confiança - Priorizamos uma comunicação clara e aberta, essencial para parcerias e relacionamento com o público.</li>
-                    <li>Acessbilidade digital - Facilitamos o contato e participação via plataformas simples, como WhatsApp e formulários online.</li>
-                    <li>Segurança de dados - Garantimos a proteção das informações dos nossos clientes e parceiros em todas as interações.</li>
-                    <h3>O que oferecemos:</h3>
+                    <h3 className='titulo-missao'>Nossa Missão</h3>
+                    <p className='texto-missao'>Fazer da vida uma festa inesquecível. Na Stellaris, nossa missão é transformar ideias em experiências únicas - daquelas que viram boas histórias pra contar. Acreditamos no poder dos encontros, na energia dos eventos feitos com a alma e na magia de criar memórias que brilham mais que os flashes.</p>
+                    <h3 className='titulo-valores'>Nossos Valores</h3>
+                    <div className='texto-valores'>
+                        <li>Experiência memorável - Criamos eventos que emocionam e conectam, garantindo momentos únicos para todos.</li>
+                        <li>Transparência e confiança - Priorizamos uma comunicação clara e aberta, essencial para parcerias e relacionamento com o público.</li>
+                        <li>Acessbilidade digital - Facilitamos o contato e participação via plataformas simples, como WhatsApp e formulários online.</li>
+                        <li>Segurança de dados - Garantimos a proteção das informações dos nossos clientes e parceiros em todas as interações.</li>
+                    </div>
+                    <h3 className='titulo-oferecimenots'>O que oferecemos:</h3>
                     <div className='oferecimentos'>
                         <div className='parcerias'>
                             <img src={iconHand}></img>
