@@ -6,9 +6,10 @@
 
 .avaliar-container {
   max-width: 600px;
-  margin: 30px auto;
-  padding: 0 20px;
-  color: #222;
+  margin: 0 auto;
+  color: white;
+  padding: 120px 20px;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
 }
 
@@ -21,10 +22,4 @@
 .avaliar-texto .descricao {
   font-size: 32px;
   line-height: 1.5;
-}
-.avaliar-container {
-  color: white;
-  padding: 40px;
-  min-height: 100vh;
-  font-family: 'Inter', sans-serif;
 }

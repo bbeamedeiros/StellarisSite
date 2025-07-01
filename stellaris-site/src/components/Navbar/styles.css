@@ -1,20 +1,20 @@
 .nav {
-  left: 50px;
-  right: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding: 32px 16px;
+  padding: 32px 164px; 
   color: white;
-  position: fixed;
   z-index: 10;
   transition: background-color 0.3s ease;
-
+  box-sizing: border-box;
 }
+
 
 .nav-scrolled {
   background-color: rgba(0, 0, 0, 0.85);

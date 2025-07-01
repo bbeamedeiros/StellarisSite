@@ -1,4 +1,6 @@
 .card-evento {
+    width: 300px;
+    margin: 10px;
     border: 1px solid #E0E0E0;
     padding: 12px;
     border-radius: 6px;
