@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
- 
+
     /* Aplica um gradiente de transparência nas bordas inferiores */
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), transparent);
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), transparent);
@@ -23,6 +23,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .sobre-nos-imagem {
@@ -33,64 +34,65 @@
 .sobre-nos-texto {
     max-width: 500px;
     margin-left: 200px;
+
 }
 
 .eventos-stellaris {
     text-align: center;
-    margin: 5%;
-    padding: 10px;
+    padding-bottom: 100px;
 }
 
 .eventos-cards {
     display: flex;
     gap: 31px;
     flex-direction: row;
-    justify-content: center;  
-    padding-top: 76px;  
+    justify-content: center;
+    padding-top: 76px;
 }
 
 .produtos-stellaris {
     text-align: center;
-    margin: 5%;
-    padding: 10px;
+
 
 }
 
 .missao-container {
     display: flex;
     justify-content: center;
+
+
 }
 
 .missao {
-    max-width: 50vw;
+    max-width: 75vw;
     margin: 5%;
     border: 1px, solid rgb(78, 78, 78);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 30px;
+    padding-top: 15px;
+
 }
 
 .oferecimentos {
     display: flex;
-}
-
-.parcerias {
-    width: 289px;
-    padding: 20px;
-}
-
-.compra-ingressos {
-    width: 289px;
-    padding: 20px;
 
 }
 
-.compra-produtos {
-    width: 289px;
-    padding: 20px;
-}
-
+.parcerias,
+.compra-ingressos,
+.compra-produtos,
 .avaliacao {
     width: 289px;
     padding: 20px;
+    line-height: 3;
 }
 
+.texto-missao,
+.texto-valores {
+    padding-top: 12px;
+    padding-bottom: 36px;
+}
+
+.li {
+    color: blue;
+}
