@@ -6,7 +6,7 @@ h1 {
     display: flex;
     align-items:flex-start;
     flex-direction: column;
-    padding: 120px;
+    padding: 90px;
 }
 .produtos-header{
     display: flex;

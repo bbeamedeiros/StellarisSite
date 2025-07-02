@@ -1,19 +1,26 @@
+h1 {
+    font-size: 40px;
+}
+
 .eventos-container {
     display: flex;
-    gap: 65px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    padding-top: 120px;
+    padding: 90px;
 }
 
 .evento-futuro, .eventos-passados { 
     display: flex;
-    gap: 12px;
-
+    padding: 40px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content:  flex-start;
+}
+
+.card-futuro, .card-passado {
+    display: flex;
+    padding-top: 32px;
 }
 
 .avaliacao-eventos {
