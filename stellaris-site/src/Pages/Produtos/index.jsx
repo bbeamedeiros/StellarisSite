@@ -1,12 +1,17 @@
 import CardProdutos from '../../components/CardProdutos';
 import tardezinhaprodutos from '../../assets/tardezinhaprodutos.svg';
+import copo from '../../assets/copo.svg';
+import chaveiro from '../../assets/chaveiro.svg';   
+import combo from '../../assets/combo.svg';
 import './styles.css';
 
 export default function Produtos() {
   return (
     <div className="produtos-container">
-      <h1>Explore o Catálogo Stellaris</h1>
-      <p>Produtos oficiais, feitos para quem vive a experiência.</p>
+      <div className='produtos-header'>
+        <h1>Explore o Catálogo Stellaris</h1>
+        <p>Produtos oficiais, feitos para quem vive a experiência.</p>
+      </div>
 
       <div className='produtos-colecao'>
         <h1>Tardezinha da Stellaris</h1>
@@ -28,20 +33,20 @@ export default function Produtos() {
           <CardProdutos
             titulo={"Copo"}
             descricao={"Copo personalizado do evento."}
-            imagem={tardezinhaprodutos}
-            preco={"0,00"} />
+            imagem={copo}
+            preco={" 7,00"} />
 
           <CardProdutos
             titulo={"Chaveiro "}
             descricao={"Chaveiro exclusivo do evento."}
-            imagem={tardezinhaprodutos}
-            preco={"0,00"} />
+            imagem={chaveiro}
+            preco={" 6,00"} />
 
           <CardProdutos
             titulo={"Combo intergaláctico"}
             descricao={"Combinação de produtos do evento."}
-            imagem={tardezinhaprodutos}
-            preco={"0,00"} />
+            imagem={combo}
+            preco={" 11,00"} />
 
         </div>
 
