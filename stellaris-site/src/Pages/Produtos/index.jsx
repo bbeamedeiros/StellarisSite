@@ -16,7 +16,7 @@ export default function Produtos() {
           titulo={"Tardezinha Stellaris"}
           descricao={"Produto indisponível no momento. Em breve mais informações."}
           imagem={tardezinhaprodutos}
-          link={"#"} />
+          preco={"0,00"} />
       </div>
 
       <div className='produtos-colecao'>
