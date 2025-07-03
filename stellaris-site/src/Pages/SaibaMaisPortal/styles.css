@@ -1,12 +1,45 @@
-.titulo-portal {
-    font-size: 40px;
+.detalhes-portal-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 120px;
 }
 
-.detalhes-portal-container {
-    display: flex;
-    padding: 176px 123px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: white;
+.titulo-portal {
+  padding-bottom: 47px;
+  font-size: 40px;
+}
+
+.descricao-portal {
+  padding-top: 40px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.descricao-portal h2 {
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+.descricao-portal p {
+  font-size: 18px;
+  color: #CCCCCC;
+  line-height: 1.6;
+}
+
+.infor {
+  font-weight: bold;
+}
+.detalhe-titulo {
+  font-weight: bold; 
+  padding-bottom: 2px;
+}
+
+.detalhe-texto{
+  font-weight: normal; 
+  font-size: 17px;  
+  line-height: 1.4;  
+  color: #CCCCCC; 
 }
