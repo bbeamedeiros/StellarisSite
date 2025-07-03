@@ -1,16 +1,33 @@
 export default Home;
+
+//componentes essencias
 import CardEventos from '../../components/CardEventos';
+import CardProdutos from '../../components/CardProdutos';
+import BotaoBranco from '../../components/BotaoBranco';
+
+//imagens dos eventos
 import Tardezinha from '../../assets/Tardezinha.svg';
 import PortalMeiaNoite from '../../assets/Portal00h.svg';
-import BotaoBranco from '../../components/BotaoBranco';
+
 import './Home.css'
 import header from '../../assets/header.svg'
 import StellarisGrupo from '../../assets/StellarisGrupo.svg'
+
+//icones da parte do que oferecemos
 import iconDrink from '../../assets/iconDrink.svg'
 import iconPaint from '../../assets/iconPaint.svg'
 import iconHand from '../../assets/iconHand.svg'
 import iconStar from '../../assets/iconStar.svg'
 import iconMsg from '../../assets/iconMsg.svg'
+
+//imagens dos produtos
+import copo from '../../assets/copo.svg';
+import chaveiro from '../../assets/chaveiro.svg';   
+import combo from '../../assets/combo.svg';
+
+//Saiba mais
+import SaibaMaisPortal from '../SaibaMaisPortal/index';
+import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 
 function Home() {
     return (
@@ -35,13 +52,13 @@ function Home() {
                         titulo={"Tardezinha Stellaris - 2025"}
                         descricao={"Em breve mais informações sobre o evento."}
                         imagem={Tardezinha}
-                        link={"#"} />
+                        link={"/saiba-mais-tardezinha"} />
 
                     <CardEventos
                         titulo={"Portal da Meia Noite - 2025"}
                         descricao={"Finalizado com sucesso!"}
                         imagem={PortalMeiaNoite}
-                        link={"#"} />
+                        link={"/saiba-mais-portal"} />
                 </div>
                 <BotaoBranco texto={"Explorar Eventos"} onClick={() => window.location.href = '/eventos'} />
             </div>
@@ -49,6 +66,25 @@ function Home() {
                 <section>
                     <p className='title'>Produtos Stellaris</p>
                     <p className='sub-title'>Conheça os produtos oficiais!</p>
+                    <div className='produtos-cards'>
+                     <CardProdutos
+                                titulo={"Copo"}
+                                descricao={"Copo personalizado do evento."}
+                                imagem={copo}
+                                preco={" 7,00"} />
+                    
+                    <CardProdutos
+                                titulo={"Chaveiro "}
+                                descricao={"Chaveiro exclusivo do evento."}
+                                imagem={chaveiro}
+                                preco={" 6,00"} />
+                    
+                    <CardProdutos
+                                titulo={"Combo intergaláctico"}
+                                descricao={"Combinação de produtos do evento."}
+                                imagem={combo}
+                                preco={" 11,00"} />
+                                </div>
                     <div>
                         <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
                     </div>

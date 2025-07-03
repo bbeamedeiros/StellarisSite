@@ -43,6 +43,7 @@
 }
 
 .eventos-cards {
+    text-align: left;
     display: flex;
     gap: 31px;
     flex-direction: row;
@@ -54,6 +55,14 @@
     text-align: center;
 
 
+}
+
+.produtos-cards {
+    display: flex;
+    gap: 31px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 76px;
 }
 
 .missao-container {
