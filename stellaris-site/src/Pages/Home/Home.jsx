@@ -28,18 +28,16 @@ function Home() {
                 </div>
             </div>
             <div className='eventos-stellaris'>
-                <p className='title'>Eventos Stellaris</p>
+                <h1 className='title'>Eventos Stellaris</h1>
                 <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
                 <div className='eventos-cards'>
                     <CardEventos
-                        className='card-evento'
                         titulo={"Tardezinha Stellaris - 2025"}
                         descricao={"Em breve mais informações sobre o evento."}
                         imagem={Tardezinha}
                         link={"#"} />
 
                     <CardEventos
-                        className='card-evento'
                         titulo={"Portal da Meia Noite - 2025"}
                         descricao={"Finalizado com sucesso!"}
                         imagem={PortalMeiaNoite}
