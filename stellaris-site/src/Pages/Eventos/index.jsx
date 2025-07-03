@@ -21,7 +21,7 @@ export default function Eventos() {
                         titulo={"Tardezinha Stellaris"}
                         descricao={"Em breve!"}
                         imagem={Tardezinha}
-                        link ="/saiba-mais-tardezinha"/>
+                        link="/saiba-mais-tardezinha" />
                 </div>
 
             </div>
@@ -34,7 +34,7 @@ export default function Eventos() {
                         titulo={"Portal da Meia Noite (2025)"}
                         descricao={"Finalizado com sucesso!"}
                         imagem={PortalMeiaNoite}
-                        link ="/saiba-mais-portal"
+                        link="/saiba-mais-portal"
                     />
                 </div>
 
