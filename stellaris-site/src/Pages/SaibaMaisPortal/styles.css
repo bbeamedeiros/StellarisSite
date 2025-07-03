@@ -1,0 +1,12 @@
+.titulo-portal {
+    font-size: 40px;
+}
+
+.detalhes-portal-container {
+    display: flex;
+    padding: 176px 123px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: white;
+}

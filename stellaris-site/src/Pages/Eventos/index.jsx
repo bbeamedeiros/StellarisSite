@@ -2,8 +2,11 @@ import CardEventos from '../../components/CardEventos';
 import './styles.css';
 import Tardezinha from '../../assets/Tardezinha.svg';
 import PortalMeiaNoite from '../../assets/Portal00h.svg';
-import { Link } from 'react-router-dom';
 import Avaliar from "../AvaliarEvento/avaliar";
+import SaibaMaisPortal from '../SaibaMaisPortal/index';
+import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
+import { Link } from 'react-router-dom';
+
 
 export default function Eventos() {
 
@@ -12,13 +15,13 @@ export default function Eventos() {
 
             <div className="evento-futuro">
                 <h1>Bora pro Próximo? Garanta o Seu Ingresso!</h1>
-                <p>Em breve mais informações sobre o evento.</p>
+                <p>Em breve mais informações sobre o evento, clique em SAIBA MAIS e garanta o seu ingresso.</p>
                 <div className='card-futuro'>
                     <CardEventos
                         titulo={"Tardezinha Stellaris"}
                         descricao={"Em breve!"}
                         imagem={Tardezinha}
-                        link={"#"} />
+                        link ="/saiba-mais-tardezinha"/>
                 </div>
 
             </div>
@@ -31,7 +34,7 @@ export default function Eventos() {
                         titulo={"Portal da Meia Noite (2025)"}
                         descricao={"Finalizado com sucesso!"}
                         imagem={PortalMeiaNoite}
-                        link={"#"}
+                        link ="/saiba-mais-portal"
                     />
                 </div>
 

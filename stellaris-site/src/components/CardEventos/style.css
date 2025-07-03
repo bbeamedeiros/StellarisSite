@@ -31,11 +31,23 @@
     color: #ffffff;
 }
 
-.card-evento-link {
-    text-decoration: none;
+.card-evento-saiba {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 16px;
+    background-color: #000000;
     color: #ffffff;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.card-evento-link:hover{
-    color: #957DAD;
+.card-evento-saiba:hover {
+    background-color: #BFA2DB;
+    transform: scale(1.05);
+    color: #ffffff;
 }

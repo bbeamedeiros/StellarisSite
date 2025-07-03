@@ -1,6 +1,4 @@
-import './styles.css';
-
-export default function DetalhesPortal() {
+export default function DetalhesTardezinha() {
   return (
     <div className="detalhes-portal-container">
       <h1>Portal da Meia Noite</h1>
