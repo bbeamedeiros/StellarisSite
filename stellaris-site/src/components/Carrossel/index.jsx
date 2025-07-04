@@ -11,7 +11,7 @@ export default function Carrossel(props) {
         <Swiper
           //modulo que vou usar aqui nesse carrosel
           modules={[EffectCoverflow]}
-          className="mySwiper"
+          className="meuSwiper"
           //ativa o efeito coverflow - 
           // o que é? faz com que as imagens fiquem em perspectiva, como se fossem um carrossel 3D. Ou seja, vai dar o efeito de carrosel que eu escolhi no prototipoi do figma
           effect={'coverflow'}
