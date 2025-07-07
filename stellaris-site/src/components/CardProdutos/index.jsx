@@ -11,7 +11,7 @@ export default function CardProdutos(props) {
             </div>
             <div className='card-produto-acao'>
                 <p className="card-produto-preco">R${props.preco}</p>
-                <button className="botao-icon" onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfw3d_rb5l_Bpv-2YfN3lSLuGT4UbgKbU1A7fmJpBstsF9uEQ/viewform', '_blank')}>
+                <button className="botao-icon" onClick={() => window.open((props.link, '_blank'))}>
                     <i className="material-icons">shopping_cart</i>
                 </button>
             </div>
