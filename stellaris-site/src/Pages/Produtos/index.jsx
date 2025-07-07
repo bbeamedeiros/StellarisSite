@@ -6,6 +6,7 @@ import combo from '../../assets/combo.svg';
 import './styles.css';
 
 export default function Produtos() {
+  let googleFormsLink = 'https://docs.google.com/forms/d/e/1FAIpQLSfw3d_rb5l_Bpv-2YfN3lSLuGT4UbgKbU1A7fmJpBstsF9uEQ/viewform';
   return (
     <div className="produtos-container">
       <div className='produtos-header'>
@@ -34,19 +35,25 @@ export default function Produtos() {
             titulo={"Copo"}
             descricao={"Copo personalizado do evento."}
             imagem={copo}
-            preco={" 7,00"} />
+            preco={" 7,00"} 
+            link={googleFormsLink}
+            />
 
           <CardProdutos
             titulo={"Chaveiro "}
             descricao={"Chaveiro exclusivo do evento."}
             imagem={chaveiro}
-            preco={" 6,00"} />
+            preco={" 6,00"} 
+            link={googleFormsLink}
+            />
 
           <CardProdutos
             titulo={"Combo intergaláctico"}
             descricao={"Combinação de produtos do evento."}
             imagem={combo}
-            preco={" 11,00"} />
+            preco={" 11,00"} 
+            link={googleFormsLink}
+            />
 
         </div>
 
