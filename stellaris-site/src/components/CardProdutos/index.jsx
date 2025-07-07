@@ -11,7 +11,7 @@ export default function CardProdutos(props) {
             </div>
             <div className='card-produto-acao'>
                 <p className="card-produto-preco">R${props.preco}</p>
-                <button className="botao-icon" onClick={() => window.open((props.link, '_blank'))}>
+                <button className="botao-icon" onClick={() => window.open(props.link, '_blank')}>
                     <i className="material-icons">shopping_cart</i>
                 </button>
             </div>
