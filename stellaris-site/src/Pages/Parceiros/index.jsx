@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './styles.css'
 
 export default function Parceiros() {
+  const [parceiros, setParceiros] = useState([]);
+  const [index, setIndex] = useState(0);
+
   return (
     <div className="parceiros-container">
       <h1>Vamos crescer juntos? <p></p> 
