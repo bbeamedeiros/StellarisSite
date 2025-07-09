@@ -1,0 +1,27 @@
+h1 {
+    font-size: 40px;
+}
+
+.produtos-container {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    padding: 90px;
+}
+.produtos-header{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.produtos-cards-tarde, .produtos-cards-portal {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-top: 50px;  
+}
+
+.produtos-colecao {
+    text-align:start;
+    padding: 20px 20px;
+}

@@ -1,12 +1,11 @@
-
 .title {
     font-size: 48px;
     font-weight: 700;
 }
 
 .header {
-    width: 99vw;
-    height: a;
+    width: 100%;
+    height: auto;
 }
 
 .header img {
@@ -24,72 +23,90 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
 
 .sobre-nos-imagem {
     justify-content: end;
     margin-right: 200px;
-
 }
 
 .sobre-nos-texto {
     max-width: 500px;
     margin-left: 200px;
+
 }
 
 .eventos-stellaris {
     text-align: center;
-    margin: 5%;
-    padding: 10px;
+    padding-bottom: 100px;
 }
 
-.eventos-container {
+.eventos-cards {
+    text-align: left;
     display: flex;
-    flex-wrap: wrap;
+    gap: 31px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 76px;
 }
 
 .produtos-stellaris {
     text-align: center;
-    margin: 5%;
-    padding: 10px;
 
+
+}
+
+.produtos-cards {
+    display: flex;
+    gap: 31px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 76px;
 }
 
 .missao-container {
     display: flex;
     justify-content: center;
+
+
 }
 
 .missao {
-    max-width: 50vw;
+    max-width: 75vw;
     margin: 5%;
     border: 1px, solid rgb(78, 78, 78);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 30px;
+    padding-top: 15px;
+
 }
 
 .oferecimentos {
     display: flex;
+
 }
 
-.parcerias {
+.parcerias,
+.festa,
+.engajamento,
+.imersao,
+.idd-visual {
     width: 289px;
     padding: 20px;
+    line-height: 3;
 }
 
-.compra-ingressos {
-    width: 289px;
-    padding: 20px;
-
+.texto-missao,
+.texto-valores {
+    padding-top: 12px;
+    padding-bottom: 36px;
 }
 
-.compra-produtos {
-    width: 289px;
-    padding: 20px;
+.lista {
+    line-height: 1.8;
 }
 
-.avaliacao {
-    width: 289px;
-    padding: 20px;
+.txt-oferecimento {
+    padding-top: 12px;    
 }
-

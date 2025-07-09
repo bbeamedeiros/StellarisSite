@@ -1,4 +1,3 @@
-import React from 'react';
 import './Avaliar.css';
 
 function Avaliar() {
