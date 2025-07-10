@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
-import { database } from '../Firebase/firabase';
+import { database } from '.../Firebase/firabase';
 import './styles.css'
 
 export default function Parceiros() {
@@ -20,6 +20,18 @@ export default function Parceiros() {
       }
     });
   }, []);
+
+  const mostrarProximo = () => {
+    if (index < parceiros.length - 3) {
+      setIndex(index + 1);
+    }
+  };
+
+  const mostrarAnterior = () => {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  }
 
   return (
     <div className="parceiros-container">
