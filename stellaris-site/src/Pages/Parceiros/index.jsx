@@ -52,7 +52,6 @@ export default function Parceiros() {
       <br></br>
 
       <div>
-      
         <h1>Tem interesse em se tornar <p></p> 
         um parceiro da Stellaris? </h1>
       <br></br>
@@ -61,6 +60,7 @@ export default function Parceiros() {
         Clique abaixo e preencha nosso formulário de proposta.  <br></br>
         Vamos adorar conhecer sua ideia!
       </p>
+      <button className="botao-parceiro">Quero ser parceiro</button>
       </div>
     </div>
   );
