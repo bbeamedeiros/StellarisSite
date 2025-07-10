@@ -15,10 +15,11 @@ export default function Parceiros() {
         const lista = Object.entries(data).map(([id, info]) => ({
           id, 
           ...info
-        }))
+        }));
+        setParceiros(lista);
       }
-    })
-  } []);
+    });
+  }, []);
 
   return (
     <div className="parceiros-container">
