@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
-import { database } from '../../Firebase/firabase';
+import { database } from '../../Firebase/firebase';
 import './styles.css'
 
 export default function Parceiros() {
