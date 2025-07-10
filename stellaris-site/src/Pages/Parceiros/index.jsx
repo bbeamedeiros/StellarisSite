@@ -63,7 +63,7 @@ export default function Parceiros() {
       <button className="botao-parceiro">Quero ser parceiro</button>
       </div>
 
-      <div className="carrossel-colaboradores">
+      <div className="carrossel-parceiros">
         {parceiros.slice(index, index + 3).map(parc => (
           <div key={parc.id} className="card-colaborador">
             <div className="foto-colaborador"></div>
