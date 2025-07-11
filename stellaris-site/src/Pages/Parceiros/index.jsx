@@ -33,6 +33,8 @@ export default function Parceiros() {
     }
   }
 
+  const ehUltimo = index >= parceiros.length - 3;
+
   return (
     <div className="parceiros-container">
       <div className="parceiros-texto">
@@ -77,13 +79,15 @@ export default function Parceiros() {
 
         <div className="setas">
           {index > 0 && (
-          <button onClick={mostrarAnterior}>
-            <img src='../../assets/setaparaCima.svg' alt='Anterior'></img>
-          </button>
-        )}
-        
+            <button onClick={mostrarAnterior}>
+              <img src='../../assets/setaparaCima.svg' alt='Anterior' />
+            </button>
+          )}
           <button onClick={mostrarProximo}>
-            <img src='../../assets/setaparaBaixo.svg' alt='Próximo'></img>
+            <img 
+              src={ehUltimo ? '../../assets/setaparaCima.svg' : '../../assets/setaparaBaixo.svg'} 
+              alt='Próximo' 
+            />
           </button>
         </div>
       </div>
