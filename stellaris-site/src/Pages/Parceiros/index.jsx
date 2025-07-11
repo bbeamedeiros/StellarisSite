@@ -22,7 +22,7 @@ export default function Parceiros() {
   }, []);
 
   const mostrarProximo = () => {
-    if (index < parceiros.length - 3) {
+    if (parceiros.length > 3 && index < parceiros.length - 3) {
       setIndex(index + 1);
     }
   };
@@ -35,6 +35,7 @@ export default function Parceiros() {
 
   return (
     <div className="parceiros-container">
+      <div className="parceiros-texto">
       <div>
       <h1>Vamos crescer juntos? <p></p> 
       Seja um parceiro da Stellaris!</h1>
@@ -62,8 +63,9 @@ export default function Parceiros() {
       </p>
       <button className="botao-parceiro">Quero ser parceiro</button>
       </div>
+  </div>
 
-      <div className="carrossel.parceiros.wrapper">
+      <div className="carrossel-parceiros-wrapper">
       <div className="carrossel-parceiros">
         {parceiros.slice(index, index + 3).map(parc => (
           <div key={parc.id} className="card-parceiros">
