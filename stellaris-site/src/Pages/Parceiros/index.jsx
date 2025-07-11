@@ -65,9 +65,10 @@ export default function Parceiros() {
       <p>
         Clique abaixo e preencha nosso formulário de proposta.  <br></br>
         Vamos adorar conhecer sua ideia!
-        <BotaoBranco className="botao-branco" texto="Quero ser parceiro" />
       </p>
+      <br></br>
       
+      <BotaoBranco className="botao-branco" texto="Quero ser parceiro" />
       
       </div>
   </div>
