@@ -74,8 +74,15 @@ export default function Parceiros() {
         </div>
 
         <div className="setas">
-          <button onClick={mostrarAnterior}>▲</button>
-          <button onClick={mostrarProximo}>▼</button>
+          {index > 0 && (
+          <button onClick={mostrarAnterior}>
+            <img src='../../assets/setaparaCima.svg' alt='Anterior'></img>
+          </button>
+        )}
+        
+          <button onClick={mostrarProximo}>
+            <img src='../../assets/setaparaBaixo.svg' alt='Próximo'></img>
+          </button>
         </div>
       </div>
     </div>
