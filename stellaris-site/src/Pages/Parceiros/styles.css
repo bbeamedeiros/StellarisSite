@@ -6,14 +6,23 @@
   gap: 35px;
   padding: 110px 100px 20px 100px;
   box-sizing: border-box;
-  
+  justify-content: space-between;
 }
 
-.carrossel-parceiros {
-  width: 300px;
+.carrossel-parceiros-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  width: 300px;
+}
+
+.carrossel-parceiros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%; 
 }
 
 .card-parceiros {
@@ -24,6 +33,11 @@
   margin-bottom: 10px;
   text-align: center;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .setas {
