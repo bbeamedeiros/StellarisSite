@@ -66,7 +66,8 @@ export default function Parceiros() {
         Clique abaixo e preencha nosso formulário de proposta.  <br></br>
         Vamos adorar conhecer sua ideia!
       </p>
-      <button className="botao-parceiro">Quero ser parceiro</button>
+      <BotaoBranco texto="Quero ser parceiro" />
+      
       </div>
   </div>
 
