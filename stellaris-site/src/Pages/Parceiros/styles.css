@@ -1,32 +1,29 @@
 .parceiros-container {
   display: flex;
-  width: 808px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 35px;
-  padding: 110px 100px 20px 100px;
-  box-sizing: border-box;
+  flex-direction: row;
   justify-content: space-between;
-  
-  padding-right: 50px;
+  align-items: flex-start;
+  padding: 110px 20px 20px 30px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
 }
 
-.parceiros-texo {
+.parceiros-texto {
+ flex: 1;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  max-width: 60%;
-  padding-right: 50px;
-  box-sizing: border-box; 
+  gap: 40px;
 }
 
 .carrossel-parceiros-wrapper {
+ flex: 1;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  width: 300px;
-  margin-top: 0px;
 }
 
 .carrossel-parceiros {
@@ -38,7 +35,8 @@
 }
 
 .card-parceiros {
-  width: 100%;
+  width: 100px;
+  height: 100px;
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 20px;
