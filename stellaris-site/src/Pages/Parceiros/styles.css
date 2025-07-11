@@ -20,8 +20,10 @@
 }
 
 .botao-branco {
-  margin-top: 10;     
+  margin-top: 10px;     
   align-self: flex-start; 
+  display: flex;
+  
 }
 
 .carrossel-parceiros-wrapper {
