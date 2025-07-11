@@ -19,13 +19,13 @@
   text-align: left;
 }
 
-.botao-branco {
-  margin-top: 10px;    
-  margin: 0; 
-  align-self: flex-start; 
-  display: flex;
-  padding: 10px 20px;
 
+.parceiros-botao-wrapper .botao-branco {
+  margin-top: 10px;
+  
+  align-self: unset !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
 }
 
 .carrossel-parceiros-wrapper {
