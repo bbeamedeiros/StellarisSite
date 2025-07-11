@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
 import BotaoBranco from '../../components/BotaoBranco';
+import setaCima from '../../assets/setaparaCima.svg';
+import setaBaixo from '../../assets/setaparaBaixo.svg';
 import './styles.css'
 
 export default function Parceiros() {
@@ -81,12 +83,12 @@ export default function Parceiros() {
         <div className="setas">
           {index > 0 && (
             <button onClick={mostrarAnterior}>
-              <img src='../../assets/setaparaCima.svg' alt='Anterior' />
+              <img src={setaCima} alt='Anterior' />
             </button>
           )}
           <button onClick={mostrarProximo}>
             <img 
-              src={ehUltimo ? '../../assets/setaparaCima.svg' : '../../assets/setaparaBaixo.svg'} 
+              src={ehUltimo ? setaCima : setaBaixo} 
               alt='Próximo' 
             />
           </button>
