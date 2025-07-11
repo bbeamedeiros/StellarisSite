@@ -40,6 +40,18 @@
   gap: 10px;
 }
 
+.foto-parceiro {
+  width: 80px;
+  height: 80px;
+  background-color: #555;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
 .setas {
   display: flex;
   flex-direction: column;
