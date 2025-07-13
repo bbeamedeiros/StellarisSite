@@ -4,6 +4,7 @@ import { database } from '../../Firebase/firebase';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import SolicitarParceria from "../SejaParceiro/index";
+import ImagemParceiro from '../../components/Imagens/ImagemParceiro';
 import BotaoBranco from '../../components/BotaoBranco';
 import setaCima from '../../assets/setaparaCima.svg';
 import setaBaixo from '../../assets/setaparaBaixo.svg';
@@ -83,7 +84,7 @@ export default function Parceiros() {
       <div className="carrossel-parceiros">
         {parceiros.slice(index, index + 3).map(parc => (
           <div key={parc.id} className="card-parceiros">
-            <div className="foto-parceiro"></div>
+            <ImagemParceiro nome={parc.imagem} />
             <p>{parc.nome}</p>
       </div>
         ))}
