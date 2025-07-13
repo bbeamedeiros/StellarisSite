@@ -7,7 +7,7 @@ import React, { useState } from 'react';
         frameBorder="0"
         marginHeight="0"
         marginWidth="0"
-        title="Formulário de Solicitação de Parceria"
+        title="Seja um Parceiro Stellaris"
         style={{ border: 'none' }}
       >
         Carregando…

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
+import { Link } from 'react-router-dom';
+import SolicitarParceria from "../SejaParceiro/index";
 import BotaoBranco from '../../components/BotaoBranco';
 import setaCima from '../../assets/setaparaCima.svg';
 import setaBaixo from '../../assets/setaparaBaixo.svg';
@@ -69,7 +71,7 @@ export default function Parceiros() {
       
 
       <div className='parceiros-botao-wrapper'>
-      <BotaoBranco texto="Quero ser parceiro" onClick={() => window.location.href = '/SejaParceiro'}/>
+      <BotaoBranco texto="Quero ser parceiro" onClick={() => window.location.href = './SejaParceiro'}/>
       </div>
 
       </div>
