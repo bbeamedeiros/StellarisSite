@@ -55,9 +55,14 @@
   align-items: center;
   gap: 10px;
 }
-
-
-
+.card-parceiros .cld-image {
+  border: 1px solid white;
+  padding: 2px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .setas {
   display: flex;
