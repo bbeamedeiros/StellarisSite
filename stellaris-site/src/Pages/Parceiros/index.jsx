@@ -69,7 +69,7 @@ export default function Parceiros() {
       
 
       <div className='parceiros-botao-wrapper'>
-      <BotaoBranco texto="Quero ser parceiro" />
+      <BotaoBranco texto="Quero ser parceiro" onClick={() => window.location.href = '/SejaParceiro'}/>
       </div>
 
       </div>
