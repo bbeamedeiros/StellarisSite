@@ -7,7 +7,7 @@ function SocilitarParceria() {
       <p>Vamos caminhar juntos! Preencha o formulário abaixo:</p>
 
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScB2B3W92rR1ZO1b1qUlPJWM8vCveyNv1PwWseovDcfNWXNaw/viewform?usp=dialog"
+        src="https://docs.google.com/forms/d/e/1FAIpQLScB2B3W92rR1ZO1b1qUlPJWM8vCveyNv1PwWseovDcfNWXNaw/viewform?embedded=true"
         width="100%"
         height="800"
         frameBorder="0"
