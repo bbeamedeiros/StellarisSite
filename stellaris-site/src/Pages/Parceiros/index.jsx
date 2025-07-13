@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import SolicitarParceria from "../SejaParceiro/index";
 import BotaoBranco from '../../components/BotaoBranco';
 import setaCima from '../../assets/setaparaCima.svg';
@@ -11,6 +12,7 @@ import './styles.css'
 export default function Parceiros() {
   const [parceiros, setParceiros] = useState([]);
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const parceirosRef = ref(database, 'parceiros');
@@ -71,7 +73,7 @@ export default function Parceiros() {
       
 
       <div className='parceiros-botao-wrapper'>
-      <BotaoBranco texto="Quero ser parceiro" onClick={() => window.location.href = './SejaParceiro'}/>
+      <BotaoBranco texto="Quero ser parceiro" onClick={() => navigate('/seja-parceiro')}/>
       </div>
 
       </div>
