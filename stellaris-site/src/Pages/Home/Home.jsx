@@ -2,6 +2,7 @@ export default Home;
 
 //Firebase + cloudinary
 import ImagemEvento from '../../components/Imagens/ImagemEvento';
+import ImagemProduto from '../../components/Imagens/ImagemProduto';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
 import { useEffect, useState } from 'react';
@@ -38,7 +39,9 @@ import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 
 function Home() {
     const [eventos, setEventos] = useState([]);
+    const [produtos, setProdutos] = useState([]);
     
+    //Evenetos
     useEffect(() => {
     const eventosRef = ref(database, 'eventos');
     onValue(eventosRef, (snapshot) => {
@@ -51,6 +54,20 @@ function Home() {
         setEventos(lista);
       }
     });
+
+    //Produtos
+    const produtosRef = ref(database, 'produtos');
+    onValue(produtosRef, (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      const lista = Object.entries(data).map(([id, info]) => ({
+        id,
+        ...info
+      }));
+      setProdutos(lista);
+    }
+  });
+  
   }, []);
 
     return (
@@ -89,11 +106,16 @@ function Home() {
                     <p className='title'>Produtos Stellaris</p>
                     <p className='sub-title'>Conheça os produtos oficiais!</p>
                     <div className='produtos-cards'>
+                    {produtos.map(produto => (
                      <CardProdutos
-                                titulo={"Copo"}
-                                descricao={"Copo personalizado do evento."}
-                                imagem={copo}
-                                preco={" 7,00"} />
+                        key={produto.id}
+                        nome={produto.nome}
+                        preco={produto.preco}
+                        imagem={<ImagemProduto nome={produto.imagem} />}
+                    />
+                    ))}
+                        
+                                
                     
                     <CardProdutos
                                 titulo={"Chaveiro "}
