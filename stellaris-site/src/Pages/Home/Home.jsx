@@ -28,11 +28,6 @@ import iconHand from '../../assets/iconHand.svg'
 import iconStar from '../../assets/iconStar.svg'
 import iconMsg from '../../assets/iconMsg.svg'
 
-//imagens dos produtos
-import copo from '../../assets/copo.svg';
-import chaveiro from '../../assets/chaveiro.svg';   
-import combo from '../../assets/combo.svg';
-
 //Saiba mais
 import SaibaMaisPortal from '../SaibaMaisPortal/index';
 import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
@@ -109,26 +104,13 @@ function Home() {
                     {produtos.map(produto => (
                      <CardProdutos
                         key={produto.id}
-                        nome={produto.nome}
+                        titulo={produto.titulo}
+                        descricao={produto.descricao}
                         preco={produto.preco}
                         imagem={<ImagemProduto nome={produto.imagem} />}
                     />
                     ))}
-                        
-                                
-                    
-                    <CardProdutos
-                                titulo={"Chaveiro "}
-                                descricao={"Chaveiro exclusivo do evento."}
-                                imagem={chaveiro}
-                                preco={" 6,00"} />
-                    
-                    <CardProdutos
-                                titulo={"Combo intergaláctico"}
-                                descricao={"Combinação de produtos do evento."}
-                                imagem={combo}
-                                preco={" 11,00"} />
-                                </div>
+                        </div>
                     <div>
                         <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
                     </div>

@@ -10,7 +10,7 @@ export default function ImagemProduto({ nome }) {
   const img = cld.image(nome)
     .format('auto')
     .quality('auto')
-    .resize(auto().gravity(autoGravity()).width(300).height(225));
+    .resize(auto().gravity(autoGravity()).width(195).height(212));
 
   return <AdvancedImage cldImg={img} className="cld-image" />;
 }
