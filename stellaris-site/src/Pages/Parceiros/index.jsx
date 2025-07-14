@@ -16,6 +16,9 @@ export default function Parceiros() {
   const navigate = useNavigate();
   const carrosselRef = useRef(null);
 
+  const [mostrarSetaCima, setMostrarSetaCima] = useState(false);
+  const [mostrarSetaBaixo, setMostrarSetaBaixo] = useState(true);
+
   useEffect(() => {
     const parceirosRef = ref(database, 'parceiros');
     onValue(parceirosRef, (snapshot) => {
@@ -26,9 +29,38 @@ export default function Parceiros() {
           ...info
         }));
         setParceiros(lista);
+        setTimeout(checkScrollPosition, 100);
       }
     });
   }, []);
+
+  const checkScrollPosition = () => {
+      if (carrosselRef.current) {
+        const { scrollTopo, scrollAltura, usuarioAltura } = carrosselRef.current;
+
+        // Pode rolar para cima se não estiver no topo
+        const podeScrollCima = scrollTopo > 0;
+        // Pode rolar para baixo se a soma da rolagem com a altura visível for menor que a altura total
+        const podeScrollBaixo = Math.round(scrollTopo + usuarioAltura) < scrollAltura;
+
+        setMostrarSetaCima(podeScrollCima);
+        setMostrarSetaBaixo(podeScrollBaixo);
+      }
+  };
+
+const currentCarrosselRef = carrosselRef.current;
+    if (currentCarrosselRef) {
+      currentCarrosselRef.addEventListener('scroll', checkScrollPosition);
+      // Também verifica a posição inicial se o conteúdo já estiver renderizado
+      checkScrollPosition();
+    }
+
+    return () => {
+      if (currentCarrosselRef) {
+        currentCarrosselRef.removeEventListener('scroll', checkScrollPosition);
+      }
+    };
+  }, [parceiros]);
 
   const mostrarProximo = () => {
     if (carrosselRef.current) {
@@ -41,8 +73,6 @@ export default function Parceiros() {
       carrosselRef.current.scrollBy({ top: -160, behavior: 'smooth' });
     }
   }
-
-  // const ehUltimo = index >= parceiros.length - 3;
 
   return (
     <div className="parceiros-container">
@@ -92,14 +122,17 @@ export default function Parceiros() {
         </div>
 
         <div className="setas">
-          
+          {mostrarSetaCima && (
             <button onClick={mostrarAnterior}>
               <img src={setaCima} alt='Anterior' />
             </button>
-          
+          )}
+          {mostrarSetaBaixo && (
           <button onClick={mostrarProximo}>
             <img src={setaBaixo} alt='Próximo' />
           </button>
+          )}
+
         </div>
       </div>
     </div>
