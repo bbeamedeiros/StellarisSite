@@ -31,8 +31,8 @@ const [eventos, setEventos] = useState([]);
     });
   }, []);
 
-const futuros = eventos.filter(e => e.tipo === 'futuro');
-const passados = eventos.filter(e => e.tipo === 'passado');
+const futuros = eventos.filter(e => e.status === 'futuro');
+const passados = eventos.filter(e => e.status === 'passado');
 
     return (
         <div className="eventos-container">
