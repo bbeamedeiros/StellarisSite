@@ -1,12 +1,32 @@
 import CardProdutos from '../../components/CardProdutos';
-import tardezinhaprodutos from '../../assets/tardezinhaprodutos.svg';
-import copo from '../../assets/copo.svg';
-import chaveiro from '../../assets/chaveiro.svg';   
-import combo from '../../assets/combo.svg';
+import ImagemProduto from '../../components/Imagens/ImagemProduto';
+import { useEffect, useState } from 'react';
+import { ref, onValue } from 'firebase/database';
+import { database } from '../../Firebase/firebase';
 import './styles.css';
 
 export default function Produtos() {
-  let googleFormsLink = 'https://docs.google.com/forms/d/e/1FAIpQLSfw3d_rb5l_Bpv-2YfN3lSLuGT4UbgKbU1A7fmJpBstsF9uEQ/viewform';
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(() => {
+    const produtosRef = ref(database, 'produtos');
+    onValue(produtosRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const lista = Object.entries(data).map(([id, info]) => ({
+          id,
+          ...info
+        }));
+        setProdutos(lista);
+      }
+    });
+  }, []);
+
+const produtosTardezinha = produtos.filter(e => e.evento === 'tardezinha');
+const produtosPortal = produtos.filter(e => e.evento === 'portal');
+
+//let googleFormsLink = 'https://docs.google.com/forms/d/e/1FAIpQLSfw3d_rb5l_Bpv-2YfN3lSLuGT4UbgKbU1A7fmJpBstsF9uEQ/viewform';
+
   return (
     <div className="produtos-container">
       <div className='produtos-header'>
@@ -18,11 +38,16 @@ export default function Produtos() {
         <h1>Tardezinha da Stellaris</h1>
         <p>Conheça os produtos exclusivos dessa coleção especial.</p>
         <div className='produtos-cards-tarde'>
-          <CardProdutos
-            titulo={"Tardezinha Stellaris"}
-            descricao={"Produto indisponível no momento. Em breve mais informações."}
-            imagem={tardezinhaprodutos}
-            preco={"0,00"} />
+          {produtosTardezinha.map(produto => (
+            <CardProdutos
+              key={produto.id}
+              titulo={produto.titulo}
+              descricao={produto.descricao}
+              preco={produto.preco}
+              link={produto.link}
+              imagem={<ImagemProduto nome={produto.imagem} />}
+            />
+          ))}
         </div>
       </div>
 
@@ -31,29 +56,16 @@ export default function Produtos() {
         <p>Descubra os itens únicos que foram vendidos na primeira edição desse evento icônico.</p>
 
         <div className='produtos-cards-portal'>
-          <CardProdutos
-            titulo={"Copo"}
-            descricao={"Copo personalizado do evento."}
-            imagem={copo}
-            preco={" 7,00"} 
-            link={googleFormsLink}
+          {produtosPortal.map(produto => (
+            <CardProdutos
+              key={produto.id}
+              titulo={produto.titulo}
+              descricao={produto.descricao}
+              preco={produto.preco}
+              link={produto.link}
+              imagem={<ImagemProduto nome={produto.imagem} />}
             />
-
-          <CardProdutos
-            titulo={"Chaveiro "}
-            descricao={"Chaveiro exclusivo do evento."}
-            imagem={chaveiro}
-            preco={" 6,00"} 
-            link={googleFormsLink}
-            />
-
-          <CardProdutos
-            titulo={"Combo intergaláctico"}
-            descricao={"Combinação de produtos do evento."}
-            imagem={combo}
-            preco={" 11,00"} 
-            link={googleFormsLink}
-            />
+          ))}
 
         </div>
 
