@@ -101,12 +101,13 @@ function Home() {
                     <p className='title'>Produtos Stellaris</p>
                     <p className='sub-title'>Conheça os produtos oficiais!</p>
                     <div className='produtos-cards'>
-                    {produtos.map(produto => (
+                    {produtos.slice(0, 3).map(produto => (
                      <CardProdutos
                         key={produto.id}
                         titulo={produto.titulo}
                         descricao={produto.descricao}
                         preco={produto.preco}
+                        link={produto.link}
                         imagem={<ImagemProduto nome={produto.imagem} />}
                     />
                     ))}
