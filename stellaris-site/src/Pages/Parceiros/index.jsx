@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
 import { Link } from 'react-router-dom';
@@ -12,8 +12,9 @@ import './styles.css'
 
 export default function Parceiros() {
   const [parceiros, setParceiros] = useState([]);
-  const [index, setIndex] = useState(0);
+  //const [index, setIndex] = useState(0);
   const navigate = useNavigate();
+  const carrosselRef = useRef(null);
 
   useEffect(() => {
     const parceirosRef = ref(database, 'parceiros');
@@ -30,18 +31,18 @@ export default function Parceiros() {
   }, []);
 
   const mostrarProximo = () => {
-    if (parceiros.length > 3 && index < parceiros.length - 3) {
-      setIndex(index + 1);
+    if (carrosselRef.current) {
+      carrosselRef.current.scrollBy({ top: 160, behavior: 'smooth' }); 
     }
   };
 
   const mostrarAnterior = () => {
-    if (index > 0) {
-      setIndex(index - 1);
+    if (carrosselRef.current) {
+      carrosselRef.current.scrollBy({ top: -160, behavior: 'smooth' });
     }
   }
 
-  const ehUltimo = index >= parceiros.length - 3;
+  // const ehUltimo = index >= parceiros.length - 3;
 
   return (
     <div className="parceiros-container">
@@ -81,8 +82,8 @@ export default function Parceiros() {
   </div>
 
       <div className="carrossel-parceiros-wrapper">
-      <div className="carrossel-parceiros">
-        {parceiros.slice(index, index + 3).map(parc => (
+      <div className="carrossel-parceiros" ref={carrosselRef}>
+        {parceiros.map(parc => (
           <div key={parc.id} className="card-parceiros">
             <ImagemParceiro nome={parc.imagem} />
             <p>{parc.nome}</p>
@@ -91,16 +92,13 @@ export default function Parceiros() {
         </div>
 
         <div className="setas">
-          {index > 0 && (
+          
             <button onClick={mostrarAnterior}>
               <img src={setaCima} alt='Anterior' />
             </button>
-          )}
+          
           <button onClick={mostrarProximo}>
-            <img 
-              src={ehUltimo ? setaCima : setaBaixo} 
-              alt='Próximo' 
-            />
+            <img src={setaBaixo} alt='Próximo' />
           </button>
         </div>
       </div>
