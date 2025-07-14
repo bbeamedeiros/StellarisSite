@@ -7,8 +7,32 @@ import SaibaMaisPortal from '../SaibaMaisPortal/index';
 import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 import { Link } from 'react-router-dom';
 
+//Firebase + cloudinary
+import ImagemEvento from '../../components/Imagens/ImagemEvento';
+import { ref, onValue } from 'firebase/database';
+import { database } from '../../Firebase/firebase';
+import { useEffect, useState } from 'react';
+
 
 export default function Eventos() {
+const [eventos, setEventos] = useState([]);
+    
+    useEffect(() => {
+    const eventosRef = ref(database, 'eventos');
+    onValue(eventosRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const lista = Object.entries(data).map(([id, info]) => ({
+          id,
+          ...info
+        }));
+        setEventos(lista);
+      }
+    });
+  }, []);
+
+const futuros = eventos.filter(e => e.tipo === 'futuro');
+const passados = eventos.filter(e => e.tipo === 'passado');
 
     return (
         <div className="eventos-container">
@@ -17,11 +41,15 @@ export default function Eventos() {
                 <h1>Bora pro Próximo? Garanta o Seu Ingresso!</h1>
                 <p>Em breve mais informações sobre o evento, clique em SAIBA MAIS e garanta o seu ingresso.</p>
                 <div className='card-futuro'>
-                    <CardEventos
-                        titulo={"Tardezinha Stellaris"}
-                        descricao={"Em breve!"}
-                        imagem={Tardezinha}
-                        link="/saiba-mais-tardezinha" />
+                    {futuros.map((evento) => (
+                        <CardEventos
+                            key={evento.id}
+                            titulo={evento.titulo}
+                            descricao={evento.descricao}
+                            link={evento.link}
+                            imagem={<ImagemEvento nome={evento.imagem} />}
+                        />
+                    ))}
                 </div>
 
             </div>
@@ -30,12 +58,15 @@ export default function Eventos() {
                 <h1>Momentos Inesquecíveis</h1>
                 <p>Só quem viveu sabe... Mas dá pra sentir o clima aqui.</p>
                 <div className="card-passado">
-                    <CardEventos
-                        titulo={"Portal da Meia Noite (2025)"}
-                        descricao={"Finalizado com sucesso!"}
-                        imagem={PortalMeiaNoite}
-                        link="/saiba-mais-portal"
-                    />
+                    {passados.map((evento) => (
+                        <CardEventos
+                            key={evento.id}
+                            titulo={evento.titulo}
+                            descricao={evento.descricao}
+                            link={evento.link}
+                            imagem={<ImagemEvento nome={evento.imagem} />}
+                        />
+                    ))}
                 </div>
 
                 <div className="avaliacao-eventos">

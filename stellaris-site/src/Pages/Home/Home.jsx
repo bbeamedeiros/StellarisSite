@@ -1,6 +1,6 @@
 export default Home;
-//Firebase + cloudinary
 
+//Firebase + cloudinary
 import ImagemEvento from '../../components/Imagens/ImagemEvento';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
