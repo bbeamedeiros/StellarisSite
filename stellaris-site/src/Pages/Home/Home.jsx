@@ -1,4 +1,11 @@
 export default Home;
+//Firebase + cloudinary
+
+import ImagemEvento from '../../components/Imagens/ImagemEvento';
+import { ref, onValue } from 'firebase/database';
+import { database } from '../../Firebase/firebase';
+import { useEffect, useState } from 'react';
+
 
 //componentes essencias
 import CardEventos from '../../components/CardEventos';
@@ -30,6 +37,22 @@ import SaibaMaisPortal from '../SaibaMaisPortal/index';
 import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 
 function Home() {
+    const [eventos, setEventos] = useState([]);
+    
+    useEffect(() => {
+    const eventosRef = ref(database, 'eventos');
+    onValue(eventosRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const lista = Object.entries(data).map(([id, info]) => ({
+          id,
+          ...info
+        }));
+        setEventos(lista);
+      }
+    });
+  }, []);
+
     return (
         <div>
             <div className='header'>
@@ -48,18 +71,17 @@ function Home() {
                 <h1 className='title'>Eventos Stellaris</h1>
                 <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
                 <div className='eventos-cards'>
+                    {eventos.map((evento) => (
                     <CardEventos
-                        titulo={"Tardezinha Stellaris - 2025"}
-                        descricao={"Em breve mais informações sobre o evento."}
-                        imagem={Tardezinha}
-                        link={"/saiba-mais-tardezinha"} />
-
-                    <CardEventos
-                        titulo={"Portal da Meia Noite - 2025"}
-                        descricao={"Finalizado com sucesso!"}
-                        imagem={PortalMeiaNoite}
-                        link={"/saiba-mais-portal"} />
+                        key={evento.id}
+                        titulo={evento.titulo}
+                        descricao={evento.descricao}
+                        link={evento.link}
+                        imagem={<ImagemEvento nome={evento.imagem} />}
+                    />
+                    ))}
                 </div>
+
                 <BotaoBranco texto={"Explorar Eventos"} onClick={() => window.location.href = '/eventos'} />
             </div>
             <div className='produtos-stellaris'>
