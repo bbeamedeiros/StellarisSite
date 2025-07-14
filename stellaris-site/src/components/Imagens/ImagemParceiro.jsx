@@ -12,5 +12,5 @@ export default function ImagemParceiro({ nome }) {
     .quality('auto')
     .resize(auto().gravity(autoGravity()).width(100).height(100));
 
-  return <AdvancedImage cldImg={img} />;
+  return <AdvancedImage cldImg={img} className="cld-image" />;
 }
