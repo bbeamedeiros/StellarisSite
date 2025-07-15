@@ -29,6 +29,9 @@ import iconHand from '../../assets/iconHand.svg'
 import iconStar from '../../assets/iconStar.svg'
 import iconMsg from '../../assets/iconMsg.svg'
 
+import setaDireita from '../../assets/setaparaDireita.svg';
+import setaEsquerda from '../../assets/setaparaEsquerda.svg';
+
 //Saiba mais
 import SaibaMaisPortal from '../SaibaMaisPortal/index';
 import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
@@ -37,6 +40,7 @@ function Home() {
     const [eventos, setEventos] = useState([]);
     const [produtos, setProdutos] = useState([]);
     const [parceiros, setParceiros] = useState([]);
+    //const [scrollPosition, setScrollPosition] = useState(0);
     const carrosselRef = useRef(null);
     
     //Evenetos
@@ -81,17 +85,15 @@ function Home() {
   
   }, []);
 
-const mostrarProximo = () => {
+  const mostrarProximo = () => {
   if (carrosselRef.current) {
-    const scrollAmount = carrosselRef.current.offsetWidth / 2; // Rola metade da largura visível
-    carrosselRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: 160, behavior: 'smooth' });
   }
 };
 
 const mostrarAnterior = () => {
   if (carrosselRef.current) {
-     const scrollAmount = carrosselRef.current.offsetWidth / 2; // Rola metade da largura visível
-    carrosselRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: -160, behavior: 'smooth' });
   }
 };
 
@@ -151,6 +153,15 @@ const mostrarAnterior = () => {
   <p className="sub-title">Conheça quem faz parte do nosso universo</p>
   
   <div className="carrossel-parceiros-wrapper">
+    <div className="setas">    
+        <button onClick={mostrarAnterior}>
+          <img src={setaEsquerda} alt='Anterior' />
+        </button>
+        <button onClick={mostrarProximo}>
+          <img src={setaDireita} alt='Próximo' />
+        </button>
+      </div>
+
     <div className="carrossel-parceiros" ref={carrosselRef}>
       {parceiros.map(parc => (
         <div key={parc.id} className="card-parceiros">
@@ -158,14 +169,13 @@ const mostrarAnterior = () => {
           <p>{parc.nome}</p>
         </div>
       ))}
+   
+      
     </div>
-
-    <div className="setas-horizontal">
-      <button onClick={mostrarAnterior}>&lt;</button>
-      <button onClick={mostrarProximo}>&gt;</button>
-    </div>
+    
   </div>
 </section>
+
             </div>
             <div className='missao-container'>
                 <div className='missao'>
