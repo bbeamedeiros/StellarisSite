@@ -13,7 +13,10 @@ export default function CardProdutos(props) {
 
     return (
         <div className="card-produtos">
-            <img src={props.imagem} alt={props.titulo} className="card-produto-imagem" />
+            <div className="card-produto-imagem">
+                {props.imagem}
+            </div>
+            
             <div className='card-produto-informacoes'>
                 <h2 className="card-produto-titulo">{props.titulo}</h2>
                 <p className="card-produto-descricao">{props.descricao}</p>

@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import SolicitarParceria from "../SejaParceiro/index";
+import ImagemParceiro from '../../components/Imagens/ImagemParceiro';
 import BotaoBranco from '../../components/BotaoBranco';
 import setaCima from '../../assets/setaparaCima.svg';
 import setaBaixo from '../../assets/setaparaBaixo.svg';
@@ -8,7 +12,8 @@ import './styles.css'
 
 export default function Parceiros() {
   const [parceiros, setParceiros] = useState([]);
-  const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
+  const carrosselRef = useRef(null);
 
   useEffect(() => {
     const parceirosRef = ref(database, 'parceiros');
@@ -25,18 +30,16 @@ export default function Parceiros() {
   }, []);
 
   const mostrarProximo = () => {
-    if (parceiros.length > 3 && index < parceiros.length - 3) {
-      setIndex(index + 1);
+    if (carrosselRef.current) {
+      carrosselRef.current.scrollBy({ top: 160, behavior: 'smooth' }); 
     }
   };
 
   const mostrarAnterior = () => {
-    if (index > 0) {
-      setIndex(index - 1);
+    if (carrosselRef.current) {
+      carrosselRef.current.scrollBy({ top: -160, behavior: 'smooth' });
     }
   }
-
-  const ehUltimo = index >= parceiros.length - 3;
 
   return (
     <div className="parceiros-container">
@@ -66,33 +69,34 @@ export default function Parceiros() {
         Clique abaixo e preencha nosso formulário de proposta.  <br></br>
         Vamos adorar conhecer sua ideia!
       </p>
-      <BotaoBranco className="botao-branco" texto="Quero ser parceiro" />
       
+
+      <div className='parceiros-botao-wrapper'>
+      <BotaoBranco texto="Quero ser parceiro" onClick={() => navigate('/seja-parceiro')}/>
+      </div>
+
       </div>
   </div>
 
       <div className="carrossel-parceiros-wrapper">
-      <div className="carrossel-parceiros">
-        {parceiros.slice(index, index + 3).map(parc => (
+      <div className="carrossel-parceiros" ref={carrosselRef}>
+        {parceiros.map(parc => (
           <div key={parc.id} className="card-parceiros">
-            <div className="foto-parceiro"></div>
+            <ImagemParceiro nome={parc.imagem} />
             <p>{parc.nome}</p>
       </div>
         ))}
         </div>
 
-        <div className="setas">
-          {index > 0 && (
+        <div className="setas">     
             <button onClick={mostrarAnterior}>
               <img src={setaCima} alt='Anterior' />
             </button>
-          )}
+          
           <button onClick={mostrarProximo}>
-            <img 
-              src={ehUltimo ? setaCima : setaBaixo} 
-              alt='Próximo' 
-            />
+            <img src={setaBaixo} alt='Próximo' />
           </button>
+
         </div>
       </div>
     </div>

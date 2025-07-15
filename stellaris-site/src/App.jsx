@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import Eventos from './Pages/Eventos';
 import Produtos from './Pages/Produtos';
 import Parceiros from './Pages/Parceiros';
+import SejaParceiro from './Pages/SejaParceiro';
 import Avaliar from './Pages/AvaliarEvento/avaliar';
 import SaibaMaisPortal from './Pages/SaibaMaisPortal';
 import SaibaMaisTardezinha from './Pages/SaibaMaisTardezinha';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Eventos" element={<Eventos />} />
         <Route path="/Parceiros" element={<Parceiros />} />
         <Route path="/avaliar" element={<Avaliar />} />
+        <Route path="/seja-parceiro" element={<SejaParceiro />} />
         <Route path="/saiba-mais-portal" element={<SaibaMaisPortal />} />
         <Route path="/saiba-mais-tardezinha" element={<SaibaMaisTardezinha />} />
         <Route path="*" element={<Home />} />

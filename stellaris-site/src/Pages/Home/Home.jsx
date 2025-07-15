@@ -1,5 +1,14 @@
 export default Home;
 
+//Firebase + cloudinary
+import ImagemEvento from '../../components/Imagens/ImagemEvento';
+import ImagemProduto from '../../components/Imagens/ImagemProduto';
+import ImagemParceiro from '../../components/Imagens/ImagemParceiro';
+import { ref, onValue } from 'firebase/database';
+import { database } from '../../Firebase/firebase';
+import { useEffect, useState, useRef } from 'react';
+
+
 //componentes essencias
 import CardEventos from '../../components/CardEventos';
 import CardProdutos from '../../components/CardProdutos';
@@ -20,16 +29,74 @@ import iconHand from '../../assets/iconHand.svg'
 import iconStar from '../../assets/iconStar.svg'
 import iconMsg from '../../assets/iconMsg.svg'
 
-//imagens dos produtos
-import copo from '../../assets/copo.svg';
-import chaveiro from '../../assets/chaveiro.svg';   
-import combo from '../../assets/combo.svg';
+import setaDireita from '../../assets/setaparaDireita.svg';
+import setaEsquerda from '../../assets/setaparaEsquerda.svg';
 
 //Saiba mais
 import SaibaMaisPortal from '../SaibaMaisPortal/index';
 import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 
 function Home() {
+    const [eventos, setEventos] = useState([]);
+    const [produtos, setProdutos] = useState([]);
+    const [parceiros, setParceiros] = useState([]);
+    //const [scrollPosition, setScrollPosition] = useState(0);
+    const carrosselRef = useRef(null);
+    
+    //Evenetos
+    useEffect(() => {
+    const eventosRef = ref(database, 'eventos');
+    onValue(eventosRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const lista = Object.entries(data).map(([id, info]) => ({
+          id,
+          ...info
+        }));
+        setEventos(lista);
+      }
+    });
+
+    //Produtos
+    const produtosRef = ref(database, 'produtos');
+    onValue(produtosRef, (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      const lista = Object.entries(data).map(([id, info]) => ({
+        id,
+        ...info
+      }));
+      setProdutos(lista);
+    }
+  });
+
+    //Parceiros
+    const parceirosRef = ref(database, 'parceiros');
+    onValue(parceirosRef, (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      const lista = Object.entries(data).map(([id, info]) => ({
+        id,
+        ...info
+      }));
+      setParceiros(lista);
+    }
+  });
+  
+  }, []);
+
+  const mostrarProximo = () => {
+  if (carrosselRef.current) {
+    carrosselRef.current.scrollBy({ left: 160, behavior: 'smooth' });
+  }
+};
+
+const mostrarAnterior = () => {
+  if (carrosselRef.current) {
+    carrosselRef.current.scrollBy({ left: -160, behavior: 'smooth' });
+  }
+};
+
     return (
         <div>
             <div className='header'>
@@ -48,17 +115,15 @@ function Home() {
                 <h1 className='title'>Eventos Stellaris</h1>
                 <p className='sub-title'>Tudo que é Stellaris, em um só lugar! Confira nossos eventos e viva a experiência completa.</p>
                 <div className='eventos-cards'>
+                    {eventos.slice(0, 3).map((evento) => (
                     <CardEventos
-                        titulo={"Tardezinha Stellaris - 2025"}
-                        descricao={"Em breve mais informações sobre o evento."}
-                        imagem={Tardezinha}
-                        link={"/saiba-mais-tardezinha"} />
-
-                    <CardEventos
-                        titulo={"Portal da Meia Noite - 2025"}
-                        descricao={"Finalizado com sucesso!"}
-                        imagem={PortalMeiaNoite}
-                        link={"/saiba-mais-portal"} />
+                        key={evento.id}
+                        titulo={evento.titulo}
+                        descricao={evento.descricao}
+                        link={evento.link}
+                        imagem={<ImagemEvento nome={evento.imagem} />}
+                    />
+                    ))}
                 </div>
                 <BotaoBranco texto={"Explorar Eventos"} onClick={() => window.location.href = '/eventos'} />
             </div>
@@ -67,28 +132,50 @@ function Home() {
                     <p className='title'>Produtos Stellaris</p>
                     <p className='sub-title'>Conheça os produtos oficiais!</p>
                     <div className='produtos-cards'>
+                    {produtos.slice(0, 3).map(produto => (
                      <CardProdutos
-                                titulo={"Copo"}
-                                descricao={"Copo personalizado do evento."}
-                                imagem={copo}
-                                preco={" 7,00"} />
-                    
-                    <CardProdutos
-                                titulo={"Chaveiro "}
-                                descricao={"Chaveiro exclusivo do evento."}
-                                imagem={chaveiro}
-                                preco={" 6,00"} />
-                    
-                    <CardProdutos
-                                titulo={"Combo intergaláctico"}
-                                descricao={"Combinação de produtos do evento."}
-                                imagem={combo}
-                                preco={" 11,00"} />
-                                </div>
+                        key={produto.id}
+                        titulo={produto.titulo}
+                        descricao={produto.descricao}
+                        preco={produto.preco}
+                        link={produto.link}
+                        imagem={<ImagemProduto nome={produto.imagem} />}
+                    />
+                    ))}
+                        </div>
                     <div>
                         <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
                     </div>
                 </section>
+
+                <section className="parceiros-home-section">
+  <h1 className="title">Nossos Parceiros</h1>
+  <p className="sub-title">Conheça quem faz parte do nosso universo</p>
+  
+  <div className="carrossel-parceiros-wrapper">
+    <div className="setas">    
+        <button onClick={mostrarAnterior}>
+          <img src={setaEsquerda} alt='Anterior' />
+        </button>
+        <button onClick={mostrarProximo}>
+          <img src={setaDireita} alt='Próximo' />
+        </button>
+      </div>
+
+    <div className="carrossel-parceiros" ref={carrosselRef}>
+      {parceiros.map(parc => (
+        <div key={parc.id} className="card-parceiros">
+          <ImagemParceiro nome={parc.imagem} />
+          <p>{parc.nome}</p>
+        </div>
+      ))}
+   
+      
+    </div>
+    
+  </div>
+</section>
+
             </div>
             <div className='missao-container'>
                 <div className='missao'>

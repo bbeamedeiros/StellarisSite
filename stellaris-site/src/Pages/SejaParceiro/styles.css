@@ -1,0 +1,26 @@
+.header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sejaparceiro-container {
+  max-width: 600px;
+  margin: 0 auto;
+  color: white;
+  padding: 120px 20px;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.solicitarparceria-texto .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+
+.solicitarparceria-texto .descricao {
+  font-size: 32px;
+  line-height: 1.5;
+}
