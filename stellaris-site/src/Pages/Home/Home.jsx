@@ -105,7 +105,7 @@ const mostrarAnterior = () => {
             <div className="sobre-nos">
                 <div className='sobre-nos-texto'>
                     <p className='title'>Quem somos <br /> na fila do rolê?</p>
-                    <p className='quem-somos'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quod laboriosam eligendi reiciendis eaque exercitationem! Quam ducimus cumque consequuntur in dolor officiis unde incidunt corrupti quas cupiditate? Labore, corporis alias.</p>
+                    <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
                 </div>
                 <div className='sobre-nos-imagem'>
                     <img src={StellarisGrupo}></img>
