@@ -105,7 +105,7 @@ const mostrarAnterior = () => {
             <div className="sobre-nos">
                 <div className='sobre-nos-texto'>
                     <p className='title'>Quem somos <br /> na fila do rolê?</p>
-                    <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
+                    <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
                 </div>
                 <div className='sobre-nos-imagem'>
                     <img src={StellarisGrupo}></img>
@@ -167,13 +167,14 @@ const mostrarAnterior = () => {
       
     </div>
      <div className="setas">  
+      <button onClick={mostrarAnterior}>
+          <img src={setaDireita} alt='Anterior' />
+        </button>
       <button onClick={mostrarProximo}>
-          <img src={setaDireita} alt='Próximo' />
+          <img src={setaEsquerda} alt='Próximo' />
         </button>
 
-        <button onClick={mostrarAnterior}>
-          <img src={setaEsquerda} alt='Anterior' />
-        </button>
+        
         
       </div>
     

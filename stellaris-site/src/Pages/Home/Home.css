@@ -132,8 +132,8 @@
   align-items: center; 
   gap: 20px;
   /* height: 200px;  MUDANÇA: reduzir altura */
-  width: 100%;
-  max-width: 900px;
+  width: 580px;
+  /* max-width: 900px; */
   padding: 20px;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -146,12 +146,12 @@
 }
 
 .card-parceiros-home {
-    min-width: 250px;
-    max-width: 250px; /* Fixa a largura máxima */
+    min-width: 150px;
+    max-width: 150px; /* Fixa a largura máxima */
     height: auto;
-    background-color: #1e1e1e;
-    border: 2px solid #957DAD;
-    border-radius: 10px;
+    background-color: transparent;
+    /* border: 2px solid white; */
+    /*border-radius: 10px; */
     color: #fff;
     flex-shrink: 0; /* Impede que os cards encolham */
     display: flex;
@@ -162,6 +162,20 @@
     box-shadow: 0 0 10px #00000030;
     transition: transform 0.2s ease; /* Adiciona hover effect */
 }
+
+.card-parceiros-home .cld-image {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px; 
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+
 
 .card-parceiros:hover {
     transform: translateY(-5px); /* Efeito hover sutil */
