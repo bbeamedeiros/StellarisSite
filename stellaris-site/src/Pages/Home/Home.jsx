@@ -147,40 +147,29 @@ const mostrarAnterior = () => {
                         <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
                     </div>
                 </section>
-
                 <section className="parceiros-home-section">
-  <h1 className="title">Nossos Parceiros</h1>
-  <p className="sub-title">Conheça quem faz parte do nosso universo</p>
+                    <h1 className="title">Nossos Parceiros</h1>
+                    <p className="sub-title">Conheça quem faz parte do nosso universo</p>
   
-  <div className="carrossel-parceiros-home-wrapper">
-    
-
-    <div className="carrossel-parceiros-home" ref={carrosselRef}>
-      {parceiros.map(parc => (
-        <div key={parc.id} className="card-parceiros-home">
-          <ImagemParceiro nome={parc.imagem} />
-          <p>{parc.nome}</p>
+                    <div className="carrossel-parceiros-home-wrapper">
+                      <div className="carrossel-parceiros-home" ref={carrosselRef}>
+                        {parceiros.map(parc => (
+                          <div key={parc.id} className="card-parceiros-home">
+                          <ImagemParceiro nome={parc.imagem} />
+                          <p>{parc.nome}</p>
+                    </div>
+                    ))}  
+              </div>
+                  <div className="setas">  
+                  <button onClick={mostrarAnterior}>
+                    <img src={setaDireita} alt='Anterior' />
+                  </button>
+                <button onClick={mostrarProximo}>
+                    <img src={setaEsquerda} alt='Próximo' />
+                </button>
+              </div>
         </div>
-      ))}
-
- 
-      
-    </div>
-     <div className="setas">  
-      <button onClick={mostrarAnterior}>
-          <img src={setaDireita} alt='Anterior' />
-        </button>
-      <button onClick={mostrarProximo}>
-          <img src={setaEsquerda} alt='Próximo' />
-        </button>
-
-        
-        
-      </div>
-    
-  </div>
-</section>
-
+      </section>
             </div>
             <div className='missao-container'>
                 <div className='missao'>
