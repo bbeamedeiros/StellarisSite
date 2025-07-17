@@ -168,6 +168,7 @@ const mostrarAnterior = () => {
                     <img src={setaEsquerda} alt='Próximo' />
                 </button>
               </div>
+              <BotaoBranco texto={"Seja Parceiro"} onClick={() => window.location.href = '/parceiros'} />
         </div>
       </section>
             </div>
