@@ -111,34 +111,27 @@
     padding-top: 12px;    
 }
 
-
 .carrossel-parceiros-home-wrapper {
-   /* flex: 1;*/
   max-width: 800px;
-  margin: 0 auto; /* MUDANÇA: aumentar largura para horizontal */
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   position: relative;
 }
 
 .carrossel-parceiros-home {
   display: flex;
-  flex-direction: row; /* MUDANÇA: column -> row */
+  flex-direction: row;
   overflow-x: auto; 
   overflow-y: hidden;
   scroll-behavior: smooth;
   align-items: center; 
   gap: 20px;
-  /* height: 200px;  MUDANÇA: reduzir altura */
   width: 580px;
-  /* max-width: 900px; */
   padding: 20px;
   -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  
+  scrollbar-width: none;  
 }
 
 .carrossel-parceiros-home::-webkit-scrollbar {
@@ -147,20 +140,16 @@
 
 .card-parceiros-home {
     min-width: 150px;
-    max-width: 150px; /* Fixa a largura máxima */
+    max-width: 150px;
     height: auto;
     background-color: transparent;
-    /* border: 2px solid white; */
-    /*border-radius: 10px; */
     color: #fff;
-    flex-shrink: 0; /* Impede que os cards encolham */
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     padding: 16px;
     box-shadow: 0 0 10px #00000030;
-    transition: transform 0.2s ease; /* Adiciona hover effect */
 }
 
 .card-parceiros-home .cld-image {
@@ -173,12 +162,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;
-}
-
-
-
-.card-parceiros:hover {
-    transform: translateY(-5px); /* Efeito hover sutil */
 }
 
 .setas-horizontal {
