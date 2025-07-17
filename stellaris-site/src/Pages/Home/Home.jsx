@@ -87,13 +87,13 @@ function Home() {
 
   const mostrarProximo = () => {
   if (carrosselRef.current) {
-    carrosselRef.current.scrollBy({ left: 160, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
   }
 };
 
 const mostrarAnterior = () => {
   if (carrosselRef.current) {
-    carrosselRef.current.scrollBy({ left: -160, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
   }
 };
 
@@ -152,26 +152,30 @@ const mostrarAnterior = () => {
   <h1 className="title">Nossos Parceiros</h1>
   <p className="sub-title">Conheça quem faz parte do nosso universo</p>
   
-  <div className="carrossel-parceiros-wrapper">
-    <div className="setas">    
-        <button onClick={mostrarAnterior}>
-          <img src={setaEsquerda} alt='Anterior' />
-        </button>
-        <button onClick={mostrarProximo}>
-          <img src={setaDireita} alt='Próximo' />
-        </button>
-      </div>
+  <div className="carrossel-parceiros-home-wrapper">
+    
 
-    <div className="carrossel-parceiros" ref={carrosselRef}>
+    <div className="carrossel-parceiros-home" ref={carrosselRef}>
       {parceiros.map(parc => (
         <div key={parc.id} className="card-parceiros">
           <ImagemParceiro nome={parc.imagem} />
           <p>{parc.nome}</p>
         </div>
       ))}
-   
+
+ 
       
     </div>
+     <div className="setas">  
+      <button onClick={mostrarProximo}>
+          <img src={setaDireita} alt='Próximo' />
+        </button>
+
+        <button onClick={mostrarAnterior}>
+          <img src={setaEsquerda} alt='Anterior' />
+        </button>
+        
+      </div>
     
   </div>
 </section>
