@@ -157,7 +157,7 @@ const mostrarAnterior = () => {
 
     <div className="carrossel-parceiros-home" ref={carrosselRef}>
       {parceiros.map(parc => (
-        <div key={parc.id} className="card-parceiros">
+        <div key={parc.id} className="card-parceiros-home">
           <ImagemParceiro nome={parc.imagem} />
           <p>{parc.nome}</p>
         </div>

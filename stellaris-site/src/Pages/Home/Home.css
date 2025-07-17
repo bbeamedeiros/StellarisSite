@@ -114,7 +114,8 @@
 
 .carrossel-parceiros-home-wrapper {
    /* flex: 1;*/
-  max-width: 100%; /* MUDANÇA: aumentar largura para horizontal */
+  max-width: 800px;
+  margin: 0 auto; /* MUDANÇA: aumentar largura para horizontal */
   display: flex;
   flex-direction: column;
   align-items: center;
