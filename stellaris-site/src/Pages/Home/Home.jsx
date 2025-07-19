@@ -87,13 +87,13 @@ function Home() {
 
   const mostrarProximo = () => {
   if (carrosselRef.current) {
-    carrosselRef.current.scrollBy({ left: 160, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
   }
 };
 
 const mostrarAnterior = () => {
   if (carrosselRef.current) {
-    carrosselRef.current.scrollBy({ left: -160, behavior: 'smooth' });
+    carrosselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
   }
 };
 
@@ -105,7 +105,7 @@ const mostrarAnterior = () => {
             <div className="sobre-nos">
                 <div className='sobre-nos-texto'>
                     <p className='title'>Quem somos <br /> na fila do rolê?</p>
-                    <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
+                    <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
                 </div>
                 <div className='sobre-nos-imagem'>
                     <img src={StellarisGrupo}></img>
@@ -147,35 +147,30 @@ const mostrarAnterior = () => {
                         <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
                     </div>
                 </section>
-
                 <section className="parceiros-home-section">
-  <h1 className="title">Nossos Parceiros</h1>
-  <p className="sub-title">Conheça quem faz parte do nosso universo</p>
+                    <h1 className="title">Nossos Parceiros</h1>
+                    <p className="sub-title">Conheça quem faz parte do nosso universo</p>
   
-  <div className="carrossel-parceiros-wrapper">
-    <div className="setas">    
-        <button onClick={mostrarAnterior}>
-          <img src={setaEsquerda} alt='Anterior' />
-        </button>
-        <button onClick={mostrarProximo}>
-          <img src={setaDireita} alt='Próximo' />
-        </button>
-      </div>
-
-    <div className="carrossel-parceiros" ref={carrosselRef}>
-      {parceiros.map(parc => (
-        <div key={parc.id} className="card-parceiros">
-          <ImagemParceiro nome={parc.imagem} />
-          <p>{parc.nome}</p>
+                    <div className="carrossel-parceiros-home-wrapper">
+                      <div className="carrossel-parceiros-home" ref={carrosselRef}>
+                        {parceiros.map(parc => (
+                          <div key={parc.id} className="card-parceiros-home">
+                          <ImagemParceiro nome={parc.imagem} />
+                          <p>{parc.nome}</p>
+                    </div>
+                    ))}  
+              </div>
+                  <div className="setas">  
+                  <button onClick={mostrarAnterior}>
+                    <img src={setaDireita} alt='Anterior' />
+                  </button>
+                <button onClick={mostrarProximo}>
+                    <img src={setaEsquerda} alt='Próximo' />
+                </button>
+              </div>
+              <BotaoBranco texto={"Seja Parceiro"} onClick={() => window.location.href = '/parceiros'} />
         </div>
-      ))}
-   
-      
-    </div>
-    
-  </div>
-</section>
-
+      </section>
             </div>
             <div className='missao-container'>
                 <div className='missao'>

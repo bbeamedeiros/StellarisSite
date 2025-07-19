@@ -69,7 +69,6 @@ export default function Parceiros() {
         Clique abaixo e preencha nosso formulário de proposta.  <br></br>
         Vamos adorar conhecer sua ideia!
       </p>
-      
 
       <div className='parceiros-botao-wrapper'>
       <BotaoBranco texto="Quero ser parceiro" onClick={() => navigate('/seja-parceiro')}/>
@@ -87,7 +86,6 @@ export default function Parceiros() {
       </div>
         ))}
         </div>
-
         <div className="setas">     
             <button onClick={mostrarAnterior}>
               <img src={setaCima} alt='Anterior' />
@@ -96,7 +94,6 @@ export default function Parceiros() {
           <button onClick={mostrarProximo}>
             <img src={setaBaixo} alt='Próximo' />
           </button>
-
         </div>
       </div>
     </div>
