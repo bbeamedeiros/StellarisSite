@@ -53,8 +53,6 @@
 
 .produtos-stellaris {
     text-align: center;
-
-
 }
 
 .produtos-cards {
@@ -68,8 +66,6 @@
 .missao-container {
     display: flex;
     justify-content: center;
-
-
 }
 
 .missao {
@@ -79,12 +75,10 @@
     padding: 20px;
     border-radius: 30px;
     padding-top: 15px;
-
 }
 
 .oferecimentos {
     display: flex;
-
 }
 
 .parcerias,
@@ -108,34 +102,35 @@
 }
 
 .txt-oferecimento {
-    padding-top: 12px;    
+    padding-top: 12px;
 }
 
 .carrossel-parceiros-home-wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
 .carrossel-parceiros-home {
-  display: flex;
-  flex-direction: row;
-  overflow-x: auto; 
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  align-items: center; 
-  gap: 20px;
-  width: 580px;
-  padding: 20px;
-  -ms-overflow-style: none;
-  scrollbar-width: none;  
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    align-items: center;
+    gap: 20px;
+    width: 580px;
+    padding: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .carrossel-parceiros-home::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
 .card-parceiros-home {
@@ -148,20 +143,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    row-gap: 17px;
     padding: 16px;
     box-shadow: 0 0 10px #00000030;
 }
 
 .card-parceiros-home .cld-image {
-  border: 1px solid white;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px; 
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
 .setas-horizontal {
@@ -172,34 +169,41 @@
 }
 
 .setas {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .setas button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-size: 18px;
-  padding: 0px;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
 }
 
-
-
 .parceiros-home-section {
-  text-align: center;
-  padding: 60px 20px;
+    text-align: center;
+    padding: 60px 20px;
 }
 
 .parceiros-home-section .sub-title {
-  margin-bottom: 40px;
-  color: #ccc;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.icon-parceiro {
+    font-size: 150px;
+    display: inline-block;
+    text-align: center;
+    border: #fff 1px solid;
+    border-radius: 6px;
+    cursor: default;
 }
