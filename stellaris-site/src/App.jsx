@@ -10,10 +10,12 @@ import Avaliar from './Pages/AvaliarEvento/avaliar';
 import SaibaMaisPortal from './Pages/SaibaMaisPortal';
 import SaibaMaisTardezinha from './Pages/SaibaMaisTardezinha';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,5 +1,4 @@
 import './styles.css';
-import logo from "../../assets/logohorizontal.png";
 import { navItems } from './data';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';

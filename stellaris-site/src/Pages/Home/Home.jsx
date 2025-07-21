@@ -6,6 +6,7 @@ import ImagemProduto from '../../components/Imagens/ImagemProduto';
 import { ref, onValue } from 'firebase/database';
 import { database } from '../../Firebase/firebase';
 import { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 
 
 //componentes essencias
@@ -33,6 +34,7 @@ function Home() {
   const [parceiros, setParceiros] = useState([]);
   //const [scrollPosition, setScrollPosition] = useState(0);
   const carrosselRef = useRef(null);
+  const navigate = useNavigate();
 
   //Evenetos
   useEffect(() => {
@@ -116,7 +118,7 @@ function Home() {
             />
           ))}
         </div>
-        <BotaoBranco texto={"Explorar Eventos"} onClick={() => window.location.href = '/eventos'} />
+        <BotaoBranco texto={"Explorar Eventos"} onClick={() => navigate ('/Eventos')} />
       </div>
       <div className='produtos-stellaris'>
         <section>
@@ -135,7 +137,7 @@ function Home() {
             ))}
           </div>
           <div>
-            <BotaoBranco texto={"Ver catálogo completo"} onClick={() => window.location.href = '/produtos'} />
+            <BotaoBranco texto={"Ver catálogo completo"} onClick={() => navigate('/Produtos')} />
           </div>
         </section>
         <section className="parceiros-home-section">
@@ -160,7 +162,7 @@ function Home() {
                 <img src={setaEsquerda} alt='Próximo' />
               </button>
             </div>
-            <BotaoBranco texto={"Seja Parceiro"} onClick={() => window.location.href = '/parceiros'} />
+            <BotaoBranco texto={"Seja Parceiro"} onClick={() =>navigate('/Parceiros')} />
           </div>
         </section>
       </div>
