@@ -12,14 +12,9 @@ import { useEffect, useState, useRef } from 'react';
 import CardEventos from '../../components/CardEventos';
 import CardProdutos from '../../components/CardProdutos';
 import BotaoBranco from '../../components/BotaoBranco';
-
-//imagens dos eventos
-import Tardezinha from '../../assets/Tardezinha.svg';
-import PortalMeiaNoite from '../../assets/Portal00h.svg';
-
+ 
 import './Home.css'
-import header from '../../assets/header.svg'
-import StellarisGrupo from '../../assets/StellarisGrupo.svg'
+
 
 //icones da parte do que oferecemos
 import iconDrink from '../../assets/iconDrink.svg'
@@ -30,10 +25,6 @@ import iconMsg from '../../assets/iconMsg.svg'
 
 import setaDireita from '../../assets/setaparaDireita.svg';
 import setaEsquerda from '../../assets/setaparaEsquerda.svg';
-
-//Saiba mais
-import SaibaMaisPortal from '../SaibaMaisPortal/index';
-import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 
 function Home() {
   const [eventos, setEventos] = useState([]);
@@ -99,7 +90,7 @@ function Home() {
   return (
     <div>
       <div className='header'>
-        <img src={header}></img>
+      <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753107005/Prancheta_1_vsf3gf.png" alt="Stellaris Header" />
       </div>
       <div className="sobre-nos">
         <div className='sobre-nos-texto'>
@@ -107,7 +98,7 @@ function Home() {
           <p className='quem-somos'>A Stellaris é uma produtora que nasceu no universo universitário para criar experiências únicas e cheias de identidade. Mais do que festas, construímos momentos marcantes, com criatividade, inclusão e conexão real entre as pessoas.</p>
         </div>
         <div className='sobre-nos-imagem'>
-          <img src={StellarisGrupo}></img>
+          <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753110893/Group_27_1_j4x4ap.svg"></img>
         </div>
       </div>
       <div className='eventos-stellaris'>

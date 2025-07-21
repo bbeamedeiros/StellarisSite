@@ -3,9 +3,10 @@
     color: white;
     text-align: center;
     font-size: 14.4px;
-    min-height: 298px;
     height: 100%;
+    padding: 90px;
 }
+
 
 .rodape-conteudo {
     display: flex;

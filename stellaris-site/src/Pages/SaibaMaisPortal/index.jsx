@@ -1,21 +1,14 @@
 import './styles.css';
 import Carrossel from '../../components/Carrossel';
-import imagem1Portal from '../../assets/CARTAZ OFICIAL 1.svg';
-import imagem2Portal from '../../assets/IMG_2503 (1).svg';
-import imagem3Portal from '../../assets/IMG_2542.svg';
-import imagem4Portal from '../../assets/IMG-20250412-WA0081.svg';
-import imagem5Portal from '../../assets/IMG-20250412-WA0089.svg';
 
 export default function DetalhesPortal() {
-  //array das imagens que importei ali em cima 
   const imagensDoPortal = [
-    imagem1Portal,
-    imagem2Portal,
-    imagem3Portal,
-    imagem4Portal,
-    imagem5Portal,
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111242/CARTAZ_OFICIAL_8_oclusa.svg",
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111241/IMG_2503_2_rw7hdj.svg",
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111242/IMG_2542_1_afvakz.svg",
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111242/IMG-20250412-WA0081_1_nt0xuj.svg",
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111242/IMG-20250412-WA0089_1_yq1zie.svg",
   ];
-
   return (
     <div className="detalhes-portal-container">
       <h1 className='titulo-portal'>Portal da Meia Noite: Uma Experiência Inesquecível! </h1>

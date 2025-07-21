@@ -1,10 +1,5 @@
 import CardEventos from '../../components/CardEventos';
 import './styles.css';
-import Tardezinha from '../../assets/Tardezinha.svg';
-import PortalMeiaNoite from '../../assets/Portal00h.svg';
-import Avaliar from "../AvaliarEvento/avaliar";
-import SaibaMaisPortal from '../SaibaMaisPortal/index';
-import SaibaMaisTardezinha from '../SaibaMaisTardezinha/index';
 import { Link } from 'react-router-dom';
 
 //Firebase + cloudinary

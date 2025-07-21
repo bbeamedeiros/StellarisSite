@@ -51,10 +51,10 @@ export default function Parceiros() {
       <br></br>
 
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br></br>
-        Praesent ut malesuada nunc. <br></br>
-        Curabitur vel lacus nec urna egestas aliquam. <br></br>
-        Donec ac sem sed lorem commodo porttitor. <br></br>
+        Seja um parceiro da Stellaris e faça parte de experiências que marcam. <br></br>
+        Conecte sua marca a um público jovem, criativo e cheio de energia. <br></br>
+        Bora construir algo único? <br></br>
+        
       </p>
       </div>
 

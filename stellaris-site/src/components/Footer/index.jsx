@@ -2,7 +2,7 @@ import './styles.css'
 import IconeTikTok from '../../assets/icontiktok.png';
 import IconeInstagram from '../../assets/iconinstagram.png';
 import IconeX from '../../assets/iconx.png';
-import stellaris_Página3 from '../../assets/stellaris_Página 3.png';
+
 import mensagem from '../../assets/Vectormensage.svg';
 import wpp from '../../assets/Vectorwpp.svg';
 
@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
 
                 <div className="rodape-image">
-                    <img src={stellaris_Página3} alt="Logo Stellaris Eventos" className="rodape-logo" />
+                    <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753112153/LOGO2_z8enyf.svg" alt="Logo Stellaris Eventos" className="rodape-logo" />
                 </div>
 
                 <div className="rodape-redes-sociais">

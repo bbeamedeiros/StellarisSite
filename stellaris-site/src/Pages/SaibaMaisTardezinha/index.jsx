@@ -1,11 +1,10 @@
 import './styles.css';
 import Carrossel from '../../components/Carrossel';
-import imagem1Portal from '../../assets/CARTAZ OFICIAL 1.svg';
 
 export default function DetalhesPortal() {
   //array das imagens que importei ali em cima 
   const imagensDoPortal = [
-    imagem1Portal,
+    "https://res.cloudinary.com/dpc8oscuf/image/upload/v1753111971/APRESENTA%C3%87%C3%83O-EVENTOcorte2_siho9j.png"
   ];
 
   return (
