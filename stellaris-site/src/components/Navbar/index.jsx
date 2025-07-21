@@ -10,7 +10,7 @@ function Navbar() {
   const location = useLocation();
 
   console.log(location)
-  
+
   useEffect(() => {
     const handleScroll = () => {
       // Quando passar de 60px de rolagem, aplica o fundo preto
@@ -23,7 +23,7 @@ function Navbar() {
   }, []);
   return (
     <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
-      <img src={logo} alt="Logo" className="logo" />
+      <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753117397/LOGO_hnq8uk.svg" alt="Logo" className="logo" />
       <ul className="menu">
         {navItems.map((item) => (
           <li key={item.href}>
