@@ -12,7 +12,7 @@ import { useEffect, useState, useRef } from 'react';
 import CardEventos from '../../components/CardEventos';
 import CardProdutos from '../../components/CardProdutos';
 import BotaoBranco from '../../components/BotaoBranco';
- 
+
 import './Home.css'
 
 
@@ -25,6 +25,7 @@ import iconMsg from '../../assets/iconMsg.svg'
 
 import setaDireita from '../../assets/setaparaDireita.svg';
 import setaEsquerda from '../../assets/setaparaEsquerda.svg';
+import ImagemParceiro from '../../components/Imagens/ImagemParceiro';
 
 function Home() {
   const [eventos, setEventos] = useState([]);
@@ -90,7 +91,7 @@ function Home() {
   return (
     <div>
       <div className='header'>
-      <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753107005/Prancheta_1_vsf3gf.png" alt="Stellaris Header" />
+        <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753107005/Prancheta_1_vsf3gf.png" alt="Stellaris Header" />
       </div>
       <div className="sobre-nos">
         <div className='sobre-nos-texto'>
@@ -145,9 +146,7 @@ function Home() {
             <div className="carrossel-parceiros-home" ref={carrosselRef}>
               {parceiros.map(parc => (
                 <div key={parc.id} className="card-parceiros-home">
-                  <span class="material-symbols-outlined icon-parceiro">
-                    person
-                  </span>
+                  <ImagemParceiro key={parc.imagem} nome={parc.imagem} />
                   <p>{parc.nome}</p>
                 </div>
               ))}
