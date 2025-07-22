@@ -1,5 +1,6 @@
 import './styles.css';
 import Carrossel from '../../components/Carrossel';
+import BotaoBranco from '../../components/BotaoBranco';
 
 export default function DetalhesPortal() {
   //array das imagens que importei ali em cima 
@@ -10,11 +11,21 @@ export default function DetalhesPortal() {
   return (
     <div className="detalhes-portal-container">
       <h1 className='titulo-portal'>Tardezinha da Stellaris: Edição Sunset!</h1>
+      <p>Prontos para curtir uma tardezinha inesquecível? Garanta agora o seu ingresso!</p>
       {/*chamando o componente carrossel aqui*/}
-      <Carrossel imagens={imagensDoPortal} />
+      <div className='botao-comprar'>
+        <BotaoBranco
+          className="comprar-ingresso"
+          texto={"Comprar Ingresso"}
+          onClick={() => window.open('https://contate.me/5585991478783', '_blank')}
+        />
+      </div>
+      <div className='carrossel-tarde'>
+        <Carrossel imagens={imagensDoPortal} />
+      </div>
+
       <div className='descricao-portal'>
         <h2>Descrição do Evento</h2>
-        <br />
         <p>
           Prepare-se para uma tarde inesquecível! Em breve com mais informações.
           <br />
@@ -22,7 +33,7 @@ export default function DetalhesPortal() {
         <br />
         <h3>Detalhes do evento:</h3>
         <br />
-        <ul> 
+        <ul>
           <li>
             <span className="detalhe-titulo">Data:</span>
             <span className="detalhe-texto"> 13 de setembro de 2025 (sábado)</span>
@@ -45,7 +56,7 @@ export default function DetalhesPortal() {
         <h3></h3>
         <br />
         <p>
-         
+
         </p>
       </div>
     </div>

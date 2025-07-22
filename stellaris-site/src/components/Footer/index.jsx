@@ -16,7 +16,7 @@ export default function Footer() {
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=stellariscontato@gmail.com&su=Olá_Stellaris&body=Quero_falar_com_vocês" className="rodape-contato-item">
                         <img src={mensagem}/>stellariscontato@gmail.com
                     </a>
-                    <a href="https://w.app/stellarisqxd" className="rodape-contato-item">
+                    <a href="https://wa.link/usq14j" className="rodape-contato-item">
                        <img src={wpp}/> +55 (85) 9147-8783
                     </a>
                 </div>

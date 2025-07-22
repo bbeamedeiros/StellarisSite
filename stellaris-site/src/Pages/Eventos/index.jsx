@@ -34,7 +34,7 @@ const passados = eventos.filter(e => e.status === 'passado');
 
             <div className="evento-futuro">
                 <h1>Bora pro Próximo? Garanta o Seu Ingresso!</h1>
-                <p>Em breve mais informações sobre o evento, clique em SAIBA MAIS e garanta o seu ingresso.</p>
+                <p>Clique em <strong>SAIBA MAIS</strong> e garanta o seu <strong>INGRESSO</strong>.</p>
                 <div className='card-futuro'>
                     {futuros.map((evento) => (
                         <CardEventos

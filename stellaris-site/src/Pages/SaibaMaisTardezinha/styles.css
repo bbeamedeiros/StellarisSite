@@ -7,8 +7,17 @@
 }
 
 .titulo-portal {
-  padding-bottom: 47px;
+  padding: 0px;
   font-size: 40px;
+}
+
+.botao-comprar {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.comprar-ingresso{
+  width: 390px;
 }
 
 .descricao-portal {
@@ -20,6 +29,7 @@
   max-width: 1200px;
 }
 
+
 .descricao-portal h2 {
   padding-bottom: 5px;
   font-size: 30px;
@@ -30,17 +40,19 @@
   color: #CCCCCC;
   line-height: 1.6;
 }
+
 .infor {
   font-weight: bold;
 }
+
 .detalhe-titulo {
-  font-weight: bold; 
+  font-weight: bold;
   padding-bottom: 2px;
 }
 
-.detalhe-texto{
-  font-weight: normal; 
-  font-size: 17px;  
-  line-height: 1.4;  
-  color: #CCCCCC; 
+.detalhe-texto {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.4;
+  color: #CCCCCC;
 }
