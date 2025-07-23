@@ -9,9 +9,12 @@ export default function CardEventos(props) {
     //vai criar um link clicável que leva para um chat do wpp
     return (
         <div className="card-evento">
-            <div className="card-evento-imagem">{props.imagem}</div>
-            <h2 className="card-evento-titulo">{props.titulo}</h2>
-            <p className="card-evento-descricao">{props.descricao}</p>
+            <div>
+                <div className="card-evento-imagem">{props.imagem}</div>
+                <h2 className="card-evento-titulo">{props.titulo}</h2>
+                <p className="card-evento-descricao">{props.descricao}</p>
+            </div>
+
             <Link to={props.link} className="card-evento-saiba">Saiba mais</Link>
         </div>
     );

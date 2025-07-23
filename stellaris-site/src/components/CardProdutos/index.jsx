@@ -24,7 +24,7 @@ export default function CardProdutos(props) {
             <div className='card-produto-acao'>
                 <p className="card-produto-preco">R${props.preco}</p>
                 <button className="botao-icon" onClick={handleClick}>
-                    <span class="material-symbols-outlined card-icon">
+                    <span className="material-symbols-outlined card-icon">
                         shopping_cart
                     </span>
                 </button>
