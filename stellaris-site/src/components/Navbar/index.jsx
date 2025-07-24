@@ -22,7 +22,9 @@ function Navbar() {
   }, []);
   return (
     <nav className={`nav ${scrolled ? 'nav-scrolled' : ''}`}>
-      <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753117397/LOGO_hnq8uk.svg" alt="Logo" className="logo" />
+      <Link to="/Home" className="logo-link">
+        <img src="https://res.cloudinary.com/dpc8oscuf/image/upload/v1753117397/LOGO_hnq8uk.svg" alt="Logo" className="logo-image" />
+      </Link>
       <ul className="menu">
         {navItems.map((item) => (
           <li key={item.href}>
