@@ -1,4 +1,4 @@
-import './Avaliar.css';
+import './avaliar.css';
 
 function Avaliar() {
   return (
